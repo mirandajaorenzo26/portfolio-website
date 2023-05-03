@@ -4,8 +4,8 @@ import Button from './Button';
 
 const Nav = () => {
   return (
-    <nav className='hidden px-10 py-5 absolute top-0 left-0 min-w-full text-center bg-white shadow flex-2 lg:p-0 lg:relative lg:min-w-fit lg:min-h-fit lg:shadow-transparent  lg:flex lg:justify-center'>
-      <ul className='lg:flex gap-2'>
+    <nav className='flex-2 fixed hidden min-w-full px-10 py-5 text-center lg:relative lg:-z-0 lg:flex lg:min-h-fit lg:min-w-fit lg:justify-center lg:p-0'>
+      <ul className='gap-2 lg:flex'>
         <NavMenu text='Home' location='#home' />
         <NavMenu text='About' location='#about' />
         <NavMenu text='Skills' location='#skills' />

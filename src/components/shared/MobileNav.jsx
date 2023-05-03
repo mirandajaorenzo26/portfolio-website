@@ -3,18 +3,21 @@ import NavMenu from './NavMenu';
 import { MdOutlineLightMode } from 'react-icons/md';
 import Button from './Button';
 
-const MobileNav = ({ navRef, toggleNavBar }) => {
+// eslint-disable-next-line react/prop-types
+const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
   return (
     <nav
       ref={navRef}
-      className='bg-white border-none shadow absolute min-h-screen min-w-full top-0 left-0 px-10 py-5 translate-x-[-100%] transition-all duration-500 lg:hidden'>
+      className='absolute left-0 top-0 z-10  min-h-screen min-w-full translate-x-[-100%] border-none bg-white px-5 py-5 shadow transition-all duration-500 dark:bg-navy-blue lg:hidden'>
       <button
         onClick={toggleNavBar}
-        className='min-w-full flex justify-end lg:hidden
-      '>
+        className='flex min-w-full justify-end lg:hidden'>
         <FaTimes size={32} />
       </button>
-      <ul className='lg:flex gap-2'>
+      <ul className='flex min-h-[80vh] flex-col justify-evenly gap-2 text-center '>
+        <span className='cursor-pointer items-center gap-2 text-5xl font-bold'>
+          JRM
+        </span>
         <NavMenu text='Home' location='#home' />
         <NavMenu text='About' location='#about' />
         <NavMenu text='Skills' location='#skills' />
@@ -25,7 +28,11 @@ const MobileNav = ({ navRef, toggleNavBar }) => {
             <MdOutlineLightMode size={24} />
           </div>
 
-          <Button text='Download CV' buttonType='primary-btn' />
+          <Button
+            text='Download CV'
+            buttonType='primary-btn'
+            handleClick={handleClick}
+          />
         </div>
       </ul>
     </nav>

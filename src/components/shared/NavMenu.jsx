@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const NavMenu = ({ text, location }) => {
   return (
-    <li className='uppercase whitespace-nowrap px-3 py-2 hover:font-semibold hover:bg-semi-white md:hover:rounded-full'>
+    <li className='whitespace-nowrap px-5 py-2 uppercase duration-150 hover:rounded-full hover:bg-semi-white hover:font-semibold dark:hover:bg-light-navy-blue md:hover:scale-105'>
       <a href={location} className='nav-menu'>
         {text}
       </a>
