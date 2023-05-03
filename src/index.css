@@ -25,5 +25,5 @@ a {
 }
 
 .tertiary-btn {
-  @apply whitespace-nowrap rounded-md border-navy-blue px-6 py-2 font-semibold text-navy-blue duration-300 hover:scale-105 hover:bg-gray-100 dark:text-white dark:hover:bg-navy-blue;
+  @apply whitespace-nowrap rounded-md border-navy-blue px-6 py-2 font-semibold text-navy-blue underline decoration-2 underline-offset-4 duration-300 hover:scale-105 hover:bg-gray-100 dark:text-white dark:hover:bg-navy-blue;
 }
