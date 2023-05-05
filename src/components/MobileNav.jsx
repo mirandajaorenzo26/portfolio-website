@@ -1,7 +1,7 @@
 import { FaTimes } from 'react-icons/fa';
 import NavMenu from './NavMenu';
-import { MdOutlineLightMode } from 'react-icons/md';
-import Button from './Button';
+import Button from './DownloadButton';
+import ThemeToggle from './ThemeToggle';
 
 // eslint-disable-next-line react/prop-types
 const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
@@ -24,10 +24,7 @@ const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
         <NavMenu text='Projects' location='#projects' />
         <NavMenu text='Get In Touch' location='#getInTouch' />
         <div className='my-5 flex flex-col justify-center gap-5 lg:hidden'>
-          <div className='mx-auto'>
-            <MdOutlineLightMode size={24} />
-          </div>
-
+          <ThemeToggle />
           <Button
             text='Download CV'
             buttonType='primary-btn'

@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+.icon {
+  @apply duration-300 ease-in-out hover:scale-125;
+}
+
 .primary-btn {
   @apply whitespace-nowrap rounded-md bg-navy-blue px-6 py-2 font-semibold text-white duration-300 hover:scale-105 hover:bg-light-navy-blue dark:bg-white dark:text-navy-blue dark:hover:bg-gray-100;
 }
@@ -26,4 +30,8 @@ a {
 
 .tertiary-btn {
   @apply whitespace-nowrap rounded-md border-navy-blue px-6 py-2 font-semibold text-navy-blue underline decoration-2 underline-offset-4 duration-300 hover:scale-105 hover:bg-gray-100 dark:text-white dark:hover:bg-navy-blue;
+}
+
+.nav-menu {
+  @apply whitespace-nowrap px-5 py-2 font-semibold uppercase duration-300 hover:rounded-full hover:bg-semi-white hover:font-semibold dark:hover:bg-light-navy-blue md:hover:scale-105;
 }

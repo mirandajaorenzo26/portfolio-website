@@ -2,9 +2,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ text, buttonType, handleClick }) => {
   return (
-    <button
-      className={`${buttonType} min-w-fit flex-1 md:flex-grow-0`}
-      onClick={handleClick}>
+    <button className={`${buttonType}`} onClick={handleClick}>
       {text}
     </button>
   );

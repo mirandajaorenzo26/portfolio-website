@@ -1,16 +1,17 @@
-import { useEffect, useRef, useState } from 'react';
-
-import Button from './Button';
-import Nav from './Nav';
-import MobileNav from './MobileNav';
-
-import { BsFillMoonFill, BsSun } from 'react-icons/bs';
+import { useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
 
-import downloadCV from '../../functions/downloadCV';
+import DownloadButton from './DownloadButton';
+import Nav from './Nav';
+import MobileNav from './MobileNav';
+import ThemeToggle from './ThemeToggle';
+
+import downloadCV from '../functions/downloadCV';
 
 const Header = () => {
   const navRef = useRef();
+
+  // Helper function
   const toggleNavBar = () => {
     navRef.current.classList.toggle('translate-x-[-100%]');
   };
@@ -31,8 +32,8 @@ const Header = () => {
         handleClick={handleClick}
       />
       <div className='my-10 ml-5 hidden flex-1 flex-col justify-end gap-5 lg:my-0 lg:flex lg:flex-row lg:items-center lg:justify-end'>
-        {/* {isDarkMode ? <BsSun size={24} /> : <BsFillMoonFill size={24} />} */}
-        <Button
+        <ThemeToggle />
+        <DownloadButton
           text='Download CV'
           buttonType='primary-btn'
           handleClick={handleClick}

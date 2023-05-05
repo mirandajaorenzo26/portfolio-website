@@ -1,12 +1,13 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import htmlIcon from '../../assets/images/HTML.png';
-import cssIcon from '../../assets/images/CSS.png';
-import jsIcon from '../../assets/images/JS.png';
-import reactIcon from '../../assets/images/React.png';
-import tailwindIcon from '../../assets/images/Tailwind.png';
-import sassIcon from '../../assets/images/SASS.png';
-import Button from '../shared/Button';
-import mypicture from '../../assets/images/mirandajaorenzo.png';
+import htmlIcon from '../../../assets/images/HTML.png';
+import cssIcon from '../../../assets/images/CSS.png';
+import jsIcon from '../../../assets/images/JS.png';
+import reactIcon from '../../../assets/images/React.png';
+import tailwindIcon from '../../../assets/images/Tailwind.png';
+import sassIcon from '../../../assets/images/SASS.png';
+import mypicture from '../../../assets/images/mirandajaorenzo.png';
+import Button from '../../Button';
+import WebTechIcons from '../../WebTechIcons';
 
 function Home() {
   return (
@@ -76,36 +77,12 @@ function Home() {
             </strong>
             <div className='my-5 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold xl:justify-start xl:gap-7'>
               <p className='whitespace-nowrap'>Tech Stack | </p>
-              <img
-                className=' deley-300 duration-300 ease-in-out hover:scale-125'
-                src={htmlIcon}
-                alt='HTML Icon'
-              />
-              <img
-                className=' deley-300 duration-300 ease-in-out hover:scale-125'
-                src={cssIcon}
-                alt='CSS Icon'
-              />
-              <img
-                className=' deley-300 duration-300 ease-in-out hover:scale-125'
-                src={jsIcon}
-                alt='JavaScript Icon'
-              />
-              <img
-                className=' deley-300 duration-300 ease-in-out hover:scale-125'
-                src={reactIcon}
-                alt='React Icon'
-              />
-              <img
-                className=' deley-300 duration-300 ease-in-out hover:scale-125'
-                src={tailwindIcon}
-                alt='Tailwind Icon'
-              />
-              <img
-                className=' deley-300 duration-300 ease-in-out hover:scale-125'
-                src={sassIcon}
-                alt='SASS Icon'
-              />
+              <WebTechIcons icon={htmlIcon} />
+              <WebTechIcons icon={cssIcon} />
+              <WebTechIcons icon={jsIcon} />
+              <WebTechIcons icon={reactIcon} />
+              <WebTechIcons icon={tailwindIcon} />
+              <WebTechIcons icon={sassIcon} />
             </div>
             <div className='md:mb- mb-5 flex flex-row items-center justify-center gap-2 xl:hidden'>
               <p className='text-sm'>Connect with me: </p>{' '}
