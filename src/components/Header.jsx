@@ -1,12 +1,13 @@
 import { useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
 
-import DownloadButton from './DownloadButton';
-import Nav from './Nav';
-import MobileNav from './MobileNav';
+import DownloadButton from './shared/DownloadButton';
+import Nav from './navigation/Nav';
+import MobileNav from './navigation/MobileNav';
 import ThemeToggle from './ThemeToggle';
 
 import downloadCV from '../functions/downloadCV';
+import Logo from './Logo';
 
 const Header = () => {
   const navRef = useRef();
@@ -22,9 +23,7 @@ const Header = () => {
 
   return (
     <header className='fixed z-50 flex min-w-full bg-white px-5 py-5  shadow dark:bg-light-navy-blue lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52'>
-      <span className='mr-5 flex flex-1 cursor-pointer items-center gap-2 text-2xl font-bold'>
-        JRM.DEV
-      </span>
+      <Logo />
       <Nav />
       <MobileNav
         navRef={navRef}

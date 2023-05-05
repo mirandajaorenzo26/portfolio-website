@@ -1,6 +1,6 @@
-import Home from './components/sections/Home/Home';
-import About from './components/sections/About';
-import Skills from './components/sections/Skills';
+import Home from './components/sections/home/Home';
+import About from './components/sections/about/About';
+import Skills from './components/sections/skills/Skills';
 import Header from './components/Header';
 
 function App() {

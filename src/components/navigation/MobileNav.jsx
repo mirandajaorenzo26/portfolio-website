@@ -1,7 +1,7 @@
 import { FaTimes } from 'react-icons/fa';
 import NavMenu from './NavMenu';
-import Button from './DownloadButton';
-import ThemeToggle from './ThemeToggle';
+import Button from '../shared/DownloadButton';
+import ThemeToggle from '../ThemeToggle';
 
 // eslint-disable-next-line react/prop-types
 const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {

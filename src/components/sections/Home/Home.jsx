@@ -1,13 +1,9 @@
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import htmlIcon from '../../../assets/images/HTML.png';
-import cssIcon from '../../../assets/images/CSS.png';
-import jsIcon from '../../../assets/images/JS.png';
-import reactIcon from '../../../assets/images/React.png';
-import tailwindIcon from '../../../assets/images/Tailwind.png';
-import sassIcon from '../../../assets/images/SASS.png';
+import Button from '../../shared/Button';
+import TechStack from './TechStack';
+
 import mypicture from '../../../assets/images/mirandajaorenzo.png';
-import Button from '../../Button';
-import WebTechIcons from '../../WebTechIcons';
+import ContactDesktop from './ContactDesktop';
+import ContactMobile from './ContactMobile';
 
 function Home() {
   return (
@@ -17,27 +13,7 @@ function Home() {
       <div className='my-5 flex min-h-[75vh] min-w-full flex-col items-center justify-center overflow-hidden rounded-3xl bg-white p-5 text-center dark:bg-light-navy-blue md:gap-0 xl:flex-row xl:gap-20 xl:text-left  '>
         {/* Left Col */}
         <div className='flex items-center gap-5 '>
-          <div className='hidden flex-col gap-2 xl:flex'>
-            {/* Github and LinkedIn Icons for Larger Screen*/}
-            <a
-              href='https://linkedin.com/in/mirandajaorenzo'
-              target='_blank'
-              rel='noreferrer'>
-              <AiFillLinkedin
-                size={42}
-                className='deley-300 duration-300 ease-in-out hover:scale-125 hover:fill-light-navy-blue dark:hover:fill-white'
-              />
-            </a>
-            <a
-              href='https://github.com/mirandajaorenzo26'
-              target='_blank'
-              rel='noreferrer'>
-              <AiFillGithub
-                size={42}
-                className='deley-300 duration-300 ease-in-out hover:scale-125 hover:fill-light-navy-blue dark:hover:fill-white'
-              />
-            </a>
-          </div>
+          <ContactDesktop />
           <div className='m-5 flex flex-col gap-1 text-2xl lg:gap-2 lg:text-3xl  xl:gap-5 xl:text-4xl'>
             <p className=''>
               Hello!{' '}
@@ -69,43 +45,14 @@ function Home() {
                 />
               </svg>
             </p>
-            <p className=''>
+            <p>
               I am <span className=' font-semibold'>Jao Renzo Miranda.</span>
             </p>
-            <strong className=' font-bold  lg:text-4xl xl:text-5xl'>
+            <strong className='font-bold  lg:text-4xl xl:text-5xl'>
               Front-End Developer
             </strong>
-            <div className='my-5 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold xl:justify-start xl:gap-7'>
-              <p className='whitespace-nowrap'>Tech Stack | </p>
-              <WebTechIcons icon={htmlIcon} />
-              <WebTechIcons icon={cssIcon} />
-              <WebTechIcons icon={jsIcon} />
-              <WebTechIcons icon={reactIcon} />
-              <WebTechIcons icon={tailwindIcon} />
-              <WebTechIcons icon={sassIcon} />
-            </div>
-            <div className='md:mb- mb-5 flex flex-row items-center justify-center gap-2 xl:hidden'>
-              <p className='text-sm'>Connect with me: </p>{' '}
-              {/* Github and LinkedIn Icons for Mobile Screen*/}
-              <a
-                href='https://linkedin.com/in/mirandajaorenzo'
-                target='_blank'
-                rel='noreferrer'>
-                <AiFillLinkedin
-                  size={32}
-                  className='hover:fill-light-navy-blue dark:hover:fill-white'
-                />
-              </a>
-              <a
-                href='https://github.com/mirandajaorenzo26'
-                target='_blank'
-                rel='noreferrer'>
-                <AiFillGithub
-                  size={32}
-                  className='hover:fill-light-navy-blue dark:hover:fill-white'
-                />
-              </a>
-            </div>
+            <TechStack />
+            <ContactMobile />
             <div className='flex flex-wrap justify-between gap-3 text-base lg:justify-start'>
               <Button text='Contact me' buttonType='primary-btn' />
               <Button text='Know more' buttonType='secondary-btn' />
