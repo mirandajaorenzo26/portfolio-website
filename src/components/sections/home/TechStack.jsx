@@ -7,7 +7,7 @@ import tailwindIcon from '../../../assets/images/Tailwind.png';
 import sassIcon from '../../../assets/images/SASS.png';
 export default function TechStack() {
   return (
-    <div className='my-5 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold xl:justify-start xl:gap-7'>
+    <div className='my-5 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold md:min-w-max md:flex-nowrap md:justify-start xl:gap-5'>
       <p className='whitespace-nowrap'>Tech Stack | </p>
       <WebTechIcons icon={htmlIcon} />
       <WebTechIcons icon={cssIcon} />

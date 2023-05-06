@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export default function ContactMobile() {
   return (
-    <div className='md:mb- mb-5 flex flex-row items-center justify-center gap-2 xl:hidden'>
+    <div className='md:mb- mb-5 flex flex-row items-center justify-center gap-2 md:justify-start lg:hidden'>
       <p className='text-sm'>Connect with me: </p>{' '}
       {/* Github and LinkedIn Icons for Mobile Screen*/}
       <a
@@ -11,7 +11,7 @@ export default function ContactMobile() {
         rel='noreferrer'>
         <AiFillLinkedin
           size={32}
-          className='hover:fill-light-navy-blue dark:hover:fill-white'
+          className='icon hover:fill-light-navy-blue dark:hover:fill-white'
         />
       </a>
       <a
@@ -20,7 +20,7 @@ export default function ContactMobile() {
         rel='noreferrer'>
         <AiFillGithub
           size={32}
-          className='hover:fill-light-navy-blue dark:hover:fill-white'
+          className='icon hover:fill-light-navy-blue dark:hover:fill-white'
         />
       </a>
     </div>

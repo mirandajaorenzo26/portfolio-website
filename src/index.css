@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 html,
@@ -21,15 +23,15 @@ a {
 }
 
 .primary-btn {
-  @apply whitespace-nowrap rounded-md bg-navy-blue px-6 py-2 font-semibold text-white duration-300 hover:scale-105 hover:bg-light-navy-blue dark:bg-white dark:text-navy-blue dark:hover:bg-gray-100;
+  @apply flex-1 whitespace-nowrap rounded-md bg-navy-blue px-6 py-2 font-semibold text-white duration-300 hover:scale-105 hover:bg-light-navy-blue dark:bg-white dark:text-navy-blue dark:hover:bg-gray-100;
 }
 
 .secondary-btn {
-  @apply whitespace-nowrap rounded-md border-2 border-navy-blue px-6  py-2 font-semibold text-navy-blue duration-300 hover:scale-105  hover:bg-gray-100 dark:border-white dark:text-white dark:hover:bg-navy-blue;
+  @apply flex-1 whitespace-nowrap rounded-md border-2 border-navy-blue px-6  py-2 font-semibold text-navy-blue duration-300 hover:scale-105  hover:bg-gray-100 dark:border-white dark:text-white dark:hover:bg-navy-blue;
 }
 
 .tertiary-btn {
-  @apply whitespace-nowrap rounded-md border-navy-blue px-6 py-2 font-semibold text-navy-blue underline decoration-2 underline-offset-4 duration-300 hover:scale-105 hover:bg-gray-100 dark:text-white dark:hover:bg-navy-blue;
+  @apply flex-1 whitespace-nowrap rounded-md border-navy-blue px-6 py-2 font-semibold text-navy-blue  duration-300 hover:scale-105 hover:bg-gray-100 dark:text-white dark:hover:bg-navy-blue;
 }
 
 .nav-menu {
