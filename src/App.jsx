@@ -8,15 +8,18 @@ function App() {
   return (
     <>
       <Header />
-      <main className=' dark:bg-navy-blue'>
-        <section className='grid min-h-screen items-center px-2 lg:px-20 xl:px-52 '>
+      <main>
+        <section className='section grid min-h-screen items-center px-2 lg:px-20 xl:px-52 '>
           <Home />
         </section>
-        <About />
+        <section className='section-inverted lg:px-20 xl:px-52'>
+          <About />
+        </section>
         <Skills />
       </main>
     </>
   );
 }
+//
 
 export default App;

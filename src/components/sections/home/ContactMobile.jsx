@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export default function ContactMobile() {
   return (
-    <div className='md:mb- mb-5 flex flex-row items-center justify-center gap-2 md:justify-start lg:hidden'>
+    <div className=' mb-5 flex flex-row items-center justify-center gap-2 lg:hidden lg:justify-start'>
       <p className='text-sm'>Connect with me: </p>{' '}
       {/* Github and LinkedIn Icons for Mobile Screen*/}
       <a

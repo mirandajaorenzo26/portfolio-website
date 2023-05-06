@@ -2,6 +2,7 @@ import { FaTimes } from 'react-icons/fa';
 import NavMenu from './NavMenu';
 import Button from '../shared/DownloadButton';
 import ThemeToggle from '../ThemeToggle';
+import Logo from '../Logo';
 
 // eslint-disable-next-line react/prop-types
 const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
@@ -15,15 +16,15 @@ const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
         <FaTimes size={32} />
       </button>
       <ul className='flex min-h-[80vh] flex-col justify-evenly gap-2 text-center '>
-        <span className='cursor-pointer items-center gap-2 text-5xl font-bold'>
-          JRM
-        </span>
+        <div className='my-5'>
+          <Logo />
+        </div>
         <NavMenu text='Home' location='#home' />
         <NavMenu text='About' location='#about' />
         <NavMenu text='Skills' location='#skills' />
         <NavMenu text='Projects' location='#projects' />
         <NavMenu text='Get In Touch' location='#getInTouch' />
-        <div className='my-5 flex flex-col justify-center gap-5 lg:hidden'>
+        <div className='my-5 flex flex-col items-center justify-center gap-5 lg:hidden'>
           <ThemeToggle />
           <Button
             text='Download CV'

@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export default function ContactDesktop() {
   return (
-    <div className='hidden flex-col gap-2 xl:flex'>
+    <div className='hidden flex-col gap-5 xl:flex'>
       {/* Github and LinkedIn Icons for Larger Screen*/}
       <a
         href='https://linkedin.com/in/mirandajaorenzo'

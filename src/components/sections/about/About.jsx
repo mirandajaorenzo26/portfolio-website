@@ -1,19 +1,19 @@
 function About() {
   return (
-    <section id='about' className='bg-navy-blue py-10 text-white dark:bg-white'>
-      <div className=' px-5 py-10 text-center lg:mx-40 lg:px-20 xl:px-52'>
-        <div className='my-5'>
+    <div id='about'>
+      <div className='text-center lg:mx-40 lg:px-20 xl:px-52'>
+        <div className=''>
           <p className='font-semibold uppercase'>About me</p>
-          <strong className='text-xl font-bold text-semi-white md:text-2xl'>
+          <strong className='text-xl font-bold md:text-2xl'>
             A dedicated{' '}
-            <span className='text-white underline underline-offset-4'>
+            <span className='hover-underline-animation '>
               Frond-End Developer
             </span>{' '}
             from the Philippines.
           </strong>
         </div>
         <div> {/* Tabs */}</div>
-        <div className='md:mx-5'>
+        <div>
           {' '}
           {/* INTRODUCTION */}
           <p>
@@ -42,7 +42,7 @@ function About() {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

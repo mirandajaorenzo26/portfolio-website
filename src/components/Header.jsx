@@ -23,7 +23,9 @@ const Header = () => {
 
   return (
     <header className='animate__animated animate__slideInDown fixed z-50 flex min-w-full bg-white px-5 py-5  shadow dark:bg-light-navy-blue lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52'>
-      <Logo />
+      <div className='mr-5 flex-1 '>
+        <Logo />
+      </div>
       <Nav />
       <MobileNav
         navRef={navRef}
