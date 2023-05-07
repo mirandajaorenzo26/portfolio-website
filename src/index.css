@@ -39,17 +39,30 @@ a {
 }
 
 .section {
-  @apply bg-white text-navy-blue dark:bg-navy-blue dark:text-semi-white;
+  @apply bg-white px-2 text-navy-blue dark:bg-navy-blue dark:text-semi-white lg:px-20 xl:px-52;
 }
 
 .section-inverted {
-  @apply bg-navy-blue text-white dark:bg-white dark:text-navy-blue;
+  @apply bg-navy-blue px-2 text-white dark:bg-light-navy-blue lg:px-20 xl:px-52;
+}
+
+/* About */
+.about-tab {
+  @apply flex-1 whitespace-nowrap rounded-full border border-semi-white bg-navy-blue px-2 py-1 font-semibold text-white duration-300 hover:scale-105 dark:bg-transparent;
+}
+
+.about-tab-active {
+  @apply flex-1 whitespace-nowrap rounded-full bg-semi-white px-2 py-1  font-semibold text-navy-blue duration-300 hover:scale-105 dark:bg-semi-white dark:text-navy-blue;
+}
+
+.accomplishment {
+  @apply flex items-center justify-center gap-2 rounded-full bg-semi-white px-5 py-2 text-navy-blue dark:bg-navy-blue dark:text-semi-white md:min-w-max;
 }
 
 /* Custom Animation */
 
 .hover-underline-animation {
-  @apply relative inline-block text-semi-white dark:text-navy-blue;
+  @apply relative inline-block text-semi-white;
 }
 
 .hover-underline-animation::after {

@@ -7,14 +7,19 @@ import tailwindIcon from '../../../assets/images/Tailwind.png';
 import sassIcon from '../../../assets/images/SASS.png';
 export default function TechStack() {
   return (
-    <div className='my-5 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold md:min-w-max md:flex-nowrap lg:justify-start xl:gap-5'>
-      <p className='whitespace-nowrap'>Tech Stack | </p>
-      <WebTechIcons icon={htmlIcon} />
-      <WebTechIcons icon={cssIcon} />
-      <WebTechIcons icon={jsIcon} />
-      <WebTechIcons icon={reactIcon} />
-      <WebTechIcons icon={tailwindIcon} />
-      <WebTechIcons icon={sassIcon} />
+    <div className='my-5 flex flex-col flex-wrap items-center justify-center gap-2 text-xs font-semibold md:min-w-max md:flex-row md:flex-nowrap lg:justify-start '>
+      <p className='whitespace-nowrap md:hidden'>Tech Stack</p>
+      <p className='hidden whitespace-nowrap md:block'>
+        Tech Stack &nbsp;&nbsp;|{' '}
+      </p>
+      <div className='flex flex-wrap justify-center gap-2 xl:gap-5'>
+        <WebTechIcons icon={htmlIcon} />
+        <WebTechIcons icon={cssIcon} />
+        <WebTechIcons icon={jsIcon} />
+        <WebTechIcons icon={reactIcon} />
+        <WebTechIcons icon={tailwindIcon} />
+        <WebTechIcons icon={sassIcon} />
+      </div>
     </div>
   );
 }

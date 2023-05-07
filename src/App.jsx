@@ -9,13 +9,15 @@ function App() {
     <>
       <Header />
       <main>
-        <section className='section grid min-h-screen items-center px-2 lg:px-20 xl:px-52 '>
+        <section className='section grid min-h-screen items-center'>
           <Home />
         </section>
-        <section className='section-inverted lg:px-20 xl:px-52'>
+        <section className='section-inverted md:px-30 py-10 2xl:py-20'>
           <About />
         </section>
-        <Skills />
+        <section className='section'>
+          <Skills />
+        </section>
       </main>
     </>
   );

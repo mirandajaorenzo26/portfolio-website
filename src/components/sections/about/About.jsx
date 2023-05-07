@@ -1,46 +1,67 @@
+import { useEffect, useState } from 'react';
+import Button from '../../shared/Button';
+
+import AboutIntro from './AboutIntro';
+import Education from './Education';
+import Experience from './Experience';
+
 function About() {
+  const tabs = document.querySelectorAll('.about-tab');
+  const [activeTab, setActiveTab] = useState(1);
+
+  useEffect(() => {
+    tabs.forEach((tab) => {
+      if (tab.id == activeTab) {
+        tab.classList.add('about-tab-active');
+      } else {
+        tab.classList.remove('about-tab-active');
+      }
+    });
+  }, [activeTab]);
+
+  const handleTabClick = (e, tabIndex) => {
+    setActiveTab(tabIndex);
+  };
+
   return (
-    <div id='about'>
-      <div className='text-center lg:mx-40 lg:px-20 xl:px-52'>
-        <div className=''>
-          <p className='font-semibold uppercase'>About me</p>
-          <strong className='text-xl font-bold md:text-2xl'>
-            A dedicated{' '}
-            <span className='hover-underline-animation '>
-              Frond-End Developer
-            </span>{' '}
-            from the Philippines.
-          </strong>
-        </div>
-        <div> {/* Tabs */}</div>
-        <div>
-          {' '}
-          {/* INTRODUCTION */}
-          <p>
-            As a dedicated and passionate student currently pursuing a Bachelor
-            of Science in Information Technology (BSIT) at Bulacan State
-            University,
-            <b>
-              &nbsp;I am highly motivated to excel in the field of front-end
-              development.
-            </b>
-            &nbsp;My desire to constantly expand my knowledge and skills in the
-            field, paired with my strong motivation and eagerness for new
-            challenges, makes me a strong asset to any team.
-          </p>
-          <br />
-          <p>
-            I am also a self-taught UI/UX designer, I&apos;m driven by a passion
-            for creating visually stunning and user-friendly interfaces.
-            I&apos;m always excited to learn new technologies and take on new
-            challenges to grow and develop as a designer and developer.
-          </p>
-          <br />
-          <p>
-            I am committed to continuous learning and growth as a developer and
-            am eager to join a company that values innovation and creativity.
-          </p>
-        </div>
+    <div
+      id='about'
+      className='min-h-[60vh] px-5 text-center md:px-20 lg:px-32 xl:px-56'>
+      <div className=''>
+        <p className='uppercase'>About me</p>
+        <strong className='text-2xl font-bold md:text-2xl'>
+          A dedicated{' '}
+          <span className='hover-underline-animation '>
+            Frond-End Developer
+          </span>{' '}
+          from the Philippines.
+        </strong>
+      </div>
+      <div className='my-5 flex flex-wrap gap-3 text-sm md:gap-5'>
+        <Button
+          id={1}
+          text='Introduction'
+          buttonType='about-tab about-tab-active'
+          handleClick={(e) => handleTabClick(e, 1)}
+        />
+        <Button
+          id={2}
+          text='Education'
+          buttonType='about-tab'
+          handleClick={(e) => handleTabClick(e, 2)}
+        />
+        <Button
+          id={3}
+          text='Experience'
+          buttonType='about-tab'
+          handleClick={(e) => handleTabClick(e, 3)}
+        />
+      </div>
+
+      <div className='tab-content'>
+        {activeTab === 1 && <AboutIntro />}
+        {activeTab === 2 && <Education />}
+        {activeTab === 3 && <Experience />}
       </div>
     </div>
   );

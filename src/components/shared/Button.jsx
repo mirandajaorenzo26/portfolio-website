@@ -1,8 +1,9 @@
-import PropTypes from 'prop-types';
+/* eslint-disable react/prop-types */
 
-const Button = ({ text, buttonType, icon, handleClick }) => {
+const Button = ({ id, text, buttonType, icon, handleClick }) => {
   return (
     <button
+      id={id}
       className={`${buttonType} ${
         icon ? 'flex items-center justify-center gap-2' : ''
       }`}
@@ -11,13 +12,6 @@ const Button = ({ text, buttonType, icon, handleClick }) => {
       {icon}
     </button>
   );
-};
-
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  buttonType: PropTypes.string.isRequired,
-  handleClick: PropTypes.func,
-  icon: PropTypes.func,
 };
 
 export default Button;

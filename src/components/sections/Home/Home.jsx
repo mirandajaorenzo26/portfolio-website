@@ -1,6 +1,7 @@
 import HeroSection from '../../layout/HeroSection';
 import Introduction from './Introduction';
 import MyImage from './MyImage';
+
 function Home() {
   return (
     <div className='grid h-full items-center pt-[80px]  '>
