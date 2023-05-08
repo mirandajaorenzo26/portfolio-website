@@ -26,9 +26,9 @@ function About() {
   return (
     <div
       id='about'
-      className='min-h-[60vh] px-5 text-center md:px-20 lg:px-32 xl:px-56'>
+      className='animate__animated animate__backInLeft px-5 text-center md:px-20 lg:px-32 xl:px-56'>
       <div className=''>
-        <p className='uppercase'>About me</p>
+        <h2 className='uppercase'>About me</h2>
         <strong className='text-2xl font-bold md:text-2xl'>
           A dedicated{' '}
           <span className='hover-underline-animation '>

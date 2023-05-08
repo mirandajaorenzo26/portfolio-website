@@ -12,7 +12,10 @@ export default {
         'white': '#FCFBFF',
         'semi-white': '#F8F6FB',
         'navy-blue': '#15172A',
-        "light-navy-blue": '#1D1F31'
+        "light-navy-blue": '#1D1F31',
+        "most-used-tech": '',
+        "alternative-tech": '',
+        "familiar-tech": '',
       },
       screens: {
         'sm': '640px',

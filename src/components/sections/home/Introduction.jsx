@@ -39,9 +39,9 @@ export default function Introduction() {
             />
           </svg>
         </p>
-        <p>
+        <h1>
           I am <span className='font-semibold'>Jao Renzo Miranda.</span>
-        </p>
+        </h1>
         <strong className='whitespace-nowrap font-bold md:text-4xl 2xl:text-5xl'>
           Front-End Developer
         </strong>

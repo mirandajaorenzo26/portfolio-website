@@ -1,5 +1,5 @@
-import BulSULogo from './../../../assets/images/bulsu.png';
-import YangaLogo from './../../../assets/images/yanga.png';
+import BulSULogo from './../../../assets/images/schools/bulsu.png';
+import YangaLogo from './../../../assets/images/schools/yanga.png';
 export default function Education() {
   const education = {
     tertiary: {
@@ -49,7 +49,9 @@ export default function Education() {
             <p className='font-bold text-white'>Awards</p>
             {education.tertiary.awards.map((award) => {
               return (
-                <li key={self.crypto.randomUUID()}>
+                <li
+                  className='lg:ml-5 lg:list-disc'
+                  key={self.crypto.randomUUID()}>
                   <p className='text-slate-200'>{award.title}</p>
                   <p className='text-sm'>({award.date})</p>
                 </li>
@@ -72,7 +74,9 @@ export default function Education() {
             <p className='font-bold text-white'>Awards</p>
             {education.secondary.awards.map((award) => {
               return (
-                <li key={self.crypto.randomUUID()}>
+                <li
+                  className='lg:ml-5 lg:list-disc'
+                  key={self.crypto.randomUUID()}>
                   <p className='text-slate-200'>{award.title}</p>
                   <p className='text-sm'>({award.date})</p>
                 </li>

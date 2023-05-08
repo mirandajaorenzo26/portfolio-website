@@ -12,10 +12,10 @@ function App() {
         <section className='section grid min-h-screen items-center'>
           <Home />
         </section>
-        <section className='section-inverted md:px-30 py-10 2xl:py-20'>
+        <section className='section-inverted md:px-30 relative z-20 py-10 2xl:py-20'>
           <About />
         </section>
-        <section className='section'>
+        <section className='section md:px-30 relative z-20 py-10 2xl:py-20'>
           <Skills />
         </section>
       </main>

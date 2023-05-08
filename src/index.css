@@ -59,6 +59,19 @@ a {
   @apply flex items-center justify-center gap-2 rounded-full bg-semi-white px-5 py-2 text-navy-blue dark:bg-navy-blue dark:text-semi-white md:min-w-max;
 }
 
+/* Skills */
+.skill-technology {
+  @apply relative flex items-center justify-center gap-2 rounded-full bg-white px-5 py-2 font-semibold duration-300 hover:scale-110 hover:font-bold hover:shadow-md  dark:bg-navy-blue;
+}
+
+.skill-filter {
+  @apply flex cursor-pointer items-center justify-center gap-2 rounded-full px-5 py-2 hover:scale-105;
+}
+
+.skill-filter-active {
+  @apply bg-navy-blue font-bold text-white dark:bg-white dark:text-navy-blue;
+}
+
 /* Custom Animation */
 
 .hover-underline-animation {
