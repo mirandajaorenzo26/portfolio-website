@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,6 +18,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.header {
+  @apply fixed z-50 flex min-w-full bg-white px-5 py-5 shadow-md dark:bg-light-navy-blue lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52;
+}
+
+.footer {
+  @apply flex min-w-full bg-navy-blue px-5 py-5 text-white shadow-md dark:bg-light-navy-blue dark:text-white lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52;
 }
 
 .icon {
@@ -48,11 +58,11 @@ a {
 
 /* About */
 .about-tab {
-  @apply flex-1 whitespace-nowrap rounded-full border border-semi-white bg-navy-blue px-2 py-1 font-semibold text-white duration-300 hover:scale-105 dark:bg-transparent;
+  @apply flex-1 whitespace-nowrap rounded-full bg-navy-blue  px-5 py-2  font-semibold text-white duration-300 hover:scale-105 dark:bg-navy-blue;
 }
 
 .about-tab-active {
-  @apply flex-1 whitespace-nowrap rounded-full bg-semi-white px-2 py-1  font-semibold text-navy-blue duration-300 hover:scale-105 dark:bg-semi-white dark:text-navy-blue;
+  @apply bg-semi-white font-semibold text-navy-blue duration-300 hover:scale-110 dark:bg-semi-white dark:text-navy-blue;
 }
 
 .accomplishment {
@@ -61,7 +71,7 @@ a {
 
 /* Skills */
 .skill-technology {
-  @apply relative flex items-center justify-center gap-2 rounded-full bg-white px-5 py-2 font-semibold duration-300 hover:scale-110 hover:font-bold hover:shadow-md  dark:bg-navy-blue;
+  @apply flex items-center justify-center gap-2 rounded-full bg-white px-5 py-2 font-semibold duration-300 hover:font-bold hover:shadow-md dark:bg-navy-blue;
 }
 
 .skill-filter {
@@ -79,7 +89,7 @@ a {
 }
 
 .hover-underline-animation::after {
-  @apply absolute bottom-0 left-0 h-0.5 w-full origin-bottom-right scale-x-0 bg-semi-white transition-transform duration-[0.25s] ease-[ease-out] content-[''] dark:bg-navy-blue;
+  @apply absolute bottom-0 left-0 h-0.5 w-full origin-bottom-right scale-x-0 bg-semi-white transition-transform duration-[0.25s] ease-[ease-out] content-[''] dark:bg-white;
 }
 
 .hover-underline-animation:hover::after {

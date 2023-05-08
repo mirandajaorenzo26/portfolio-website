@@ -164,7 +164,7 @@ function Skills() {
   }, [activeFilter]);
 
   return (
-    <div id='skills' className='min-h-screen text-center'>
+    <div id='skills' className='text-center'>
       <h2 className='text-2xl font-bold uppercase'>Technologies that I use</h2>
       {/* Filter */}
       <div className='flex flex-wrap items-center justify-center gap-5 p-5'>
@@ -194,6 +194,7 @@ function Skills() {
       {/* ------------- */}
       <div className='m-10 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue lg:px-10 xl:mx-52 xl:px-32'>
         <h3 className='mb-5 text-lg font-bold'>Front-End Technologies</h3>
+
         <div className='flex flex-wrap justify-center gap-5'>
           {activeFilter.length !== 0 ? (
             technologies
@@ -218,6 +219,7 @@ function Skills() {
         <h3 className='mb-5 text-lg font-bold'>
           Back-End Technologies and Databases
         </h3>
+
         <div className='flex flex-wrap justify-center gap-5'>
           {activeFilter.length !== 0 ? (
             technologies

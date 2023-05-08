@@ -4,7 +4,7 @@ import { FaGraduationCap } from 'react-icons/fa';
 
 export default function AboutIntro() {
   return (
-    <div className='animate__animated animate__fadeInLeft py-5'>
+    <div className='animate__animated animate__fadeInLeft pt-5'>
       <p>
         As a dedicated and passionate student currently pursuing a Bachelor of
         Science in Information Technology (BSIT) at Bulacan State University,
@@ -35,7 +35,7 @@ export default function AboutIntro() {
         icon={<FaGraduationCap size={24} />}
       />
       <p className='my-5 text-xs'>with</p>
-      <div className='mb-5 flex flex-col flex-wrap justify-center gap-2 text-left md:flex-row'>
+      <div className='flex flex-col flex-wrap justify-center gap-2 text-left md:flex-row'>
         <Accomplishment number={4} title={'Completed Personal Project'} />
       </div>
     </div>
