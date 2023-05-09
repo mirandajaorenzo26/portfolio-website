@@ -164,10 +164,12 @@ function Skills() {
   }, [activeFilter]);
 
   return (
-    <div id='skills' className='text-center'>
+    <div className='text-center'>
+      <div id='skills' className='absolute top-[-80px]'></div>
+
       <h2 className='text-2xl font-bold uppercase'>Technologies that I use</h2>
       {/* Filter */}
-      <div className='flex flex-wrap items-center justify-center gap-5 p-5'>
+      <div className='flex flex-wrap items-center justify-center gap-5 p-5 text-xs'>
         <p className='font-semibold text-gray-600'>Filters: </p>
         <div
           ref={mostUsedFilter}
@@ -192,77 +194,81 @@ function Skills() {
         </div>
       </div>
       {/* ------------- */}
-      <div className='m-10 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue lg:px-10 xl:mx-52 xl:px-32'>
-        <h3 className='mb-5 text-lg font-bold'>Front-End Technologies</h3>
+      <div className='grid lg:grid-cols-2'>
+        <div className='m-5 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue'>
+          <h3 className='mb-5 text-lg font-bold'>Front-End Technologies</h3>
 
-        <div className='flex flex-wrap justify-center gap-5'>
-          {activeFilter.length !== 0 ? (
-            technologies
-              .filter(
-                (tech) =>
-                  activeFilter.includes(tech.status) && tech.type === 'frontend'
-              )
-              .map((tech) => (
-                <Technology
-                  key={tech.name}
-                  icon={tech.icon}
-                  name={tech.name}
-                  status={tech.status}
-                />
-              ))
-          ) : (
-            <p>No active filter.</p>
-          )}
+          <div className='flex flex-wrap justify-center gap-5'>
+            {activeFilter.length !== 0 ? (
+              technologies
+                .filter(
+                  (tech) =>
+                    activeFilter.includes(tech.status) &&
+                    tech.type === 'frontend'
+                )
+                .map((tech) => (
+                  <Technology
+                    key={tech.name}
+                    icon={tech.icon}
+                    name={tech.name}
+                    status={tech.status}
+                  />
+                ))
+            ) : (
+              <p>No active filter.</p>
+            )}
+          </div>
         </div>
-      </div>
-      <div className='m-10 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue lg:px-10 xl:mx-52 xl:px-32'>
-        <h3 className='mb-5 text-lg font-bold'>
-          Back-End Technologies and Databases
-        </h3>
+        <div className='m-5 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue'>
+          <h3 className='mb-5 text-lg font-bold'>
+            Back-End Technologies and Databases
+          </h3>
 
-        <div className='flex flex-wrap justify-center gap-5'>
-          {activeFilter.length !== 0 ? (
-            technologies
-              .filter(
-                (tech) =>
-                  activeFilter.includes(tech.status) && tech.type === 'backend'
-              )
-              .map((tech) => (
-                <Technology
-                  className='animate__animated animate__bounce'
-                  key={tech.name}
-                  icon={tech.icon}
-                  name={tech.name}
-                  status={tech.status}
-                />
-              ))
-          ) : (
-            <p>No active filter.</p>
-          )}
+          <div className='flex flex-wrap justify-center gap-5'>
+            {activeFilter.length !== 0 ? (
+              technologies
+                .filter(
+                  (tech) =>
+                    activeFilter.includes(tech.status) &&
+                    tech.type === 'backend'
+                )
+                .map((tech) => (
+                  <Technology
+                    className='animate__animated animate__bounce'
+                    key={tech.name}
+                    icon={tech.icon}
+                    name={tech.name}
+                    status={tech.status}
+                  />
+                ))
+            ) : (
+              <p>No active filter.</p>
+            )}
+          </div>
         </div>
-      </div>
-      <div className='m-10 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue lg:px-10 xl:mx-52 xl:px-32'>
-        <h3 className='mb-5 text-lg font-bold'>
-          Other Tools for Web Dev / Web Design
-        </h3>
-        <div className='flex flex-wrap justify-center gap-5'>
-          {activeFilter.length !== 0 ? (
-            technologies
-              .filter(
-                (tech) =>
-                  activeFilter.includes(tech.status) && tech.type === 'tools'
-              )
-              .map((tech) => (
-                <Technology
-                  key={tech.name}
-                  icon={tech.icon}
-                  name={tech.name}
-                  status={tech.status}
-                />
-              ))
-          ) : (
-            <p>No active filter.</p>
-          )}
+        <div className='m-5 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue lg:col-span-2'>
+          <h3 className='mb-5 text-lg font-bold'>
+            Other Tools for Web Dev / Web Design
+          </h3>
+          <div className='flex flex-wrap justify-center gap-5'>
+            {activeFilter.length !== 0 ? (
+              technologies
+                .filter(
+                  (tech) =>
+                    activeFilter.includes(tech.status) && tech.type === 'tools'
+                )
+                .map((tech) => (
+                  <Technology
+                    key={tech.name}
+                    icon={tech.icon}
+                    name={tech.name}
+                    status={tech.status}
+                  />
+                ))
+            ) : (
+              <p>No active filter.</p>
+            )}
+          </div>
         </div>
       </div>
     </div>

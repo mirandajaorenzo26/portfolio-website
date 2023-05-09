@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { BiMenuAltRight } from 'react-icons/bi';
 
 import DownloadButton from './shared/DownloadButton';
 import Nav from './navigation/Nav';
@@ -14,7 +14,7 @@ const Header = () => {
 
   // Helper function
   const toggleNavBar = () => {
-    navRef.current.classList.toggle('translate-x-[-100%]');
+    navRef.current.classList.toggle('translate-x-[0%]');
   };
 
   const handleClick = () => {
@@ -41,7 +41,7 @@ const Header = () => {
         />
       </div>
       <button onClick={toggleNavBar} className='lg:hidden'>
-        <FaBars size={32} />
+        <BiMenuAltRight size={32} />
       </button>
     </header>
   );

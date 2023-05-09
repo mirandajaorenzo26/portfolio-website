@@ -1,5 +1,4 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -14,7 +13,7 @@ export default function Footer() {
           rel='noreferrer'
           className='flex gap-2'>
           <AiFillLinkedin
-            size={32}
+            size={24}
             className='deley-300 duration-300 ease-in-out hover:scale-125'
           />
         </a>
@@ -24,11 +23,14 @@ export default function Footer() {
           rel='noreferrer'
           className='flex gap-2'>
           <AiFillGithub
-            size={32}
+            size={24}
             className='deley-300 duration-300 ease-in-out hover:scale-125'
           />
         </a>
       </div>
+      <p className='mb-5 text-center text-sm text-gray-400'>
+        Copyright &copy; 2023 Jao Renzo Miranda. All rights reserved.
+      </p>
     </footer>
   );
 }

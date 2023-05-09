@@ -8,7 +8,7 @@ const Nav = () => {
         <NavMenu text='About' location='#about' />
         <NavMenu text='Skills' location='#skills' />
         <NavMenu text='Projects' location='#projects' />
-        <NavMenu text='Get In Touch' location='#getInTouch' />
+        <NavMenu text='Get In Touch' location='#contacts' />
       </ul>
     </nav>
   );

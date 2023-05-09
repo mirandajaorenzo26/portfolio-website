@@ -43,17 +43,29 @@ export default function Introduction() {
           I am <span className='font-semibold'>Jao Renzo Miranda.</span>
         </h1>
         <strong className='whitespace-nowrap font-bold md:text-4xl 2xl:text-5xl'>
-          Front-End Developer
+          Front-end Developer
         </strong>
         <TechStack />
         <ContactMobile />
-        <div className='flex flex-wrap justify-between gap-3 text-base lg:justify-start'>
-          <Button text='Contact me' buttonType='primary-btn' />
-          <Button text='Know more' buttonType='secondary-btn' />
+        <div className='flex flex-wrap  justify-center gap-3 text-base lg:justify-start'>
+          <Button
+            text='Contact me'
+            className='primary-btn '
+            link={'#contacts'}
+            target={'_self'}
+          />
+          <Button
+            text='Know more'
+            className='secondary-btn'
+            link={'#about'}
+            target={'_self'}
+          />
           <Button
             text='View Projects'
-            buttonType='tertiary-btn'
+            className='tertiary-btn'
             icon={<AiOutlineArrowDown size={16} />}
+            link={'#projects'}
+            target={'_self'}
           />
         </div>
       </div>
