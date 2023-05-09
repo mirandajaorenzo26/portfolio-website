@@ -6,7 +6,7 @@ import Nav from './navigation/Nav';
 import MobileNav from './navigation/MobileNav';
 import ThemeToggle from './ThemeToggle';
 
-import downloadCV from '../functions/downloadCV';
+import downloadCV from '../functions/downloadFile';
 import Logo from './Logo';
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
 
   // Helper function
   const toggleNavBar = () => {
-    navRef.current.classList.toggle('translate-x-[0%]');
+    navRef.current.classList.toggle('translate-x-[100%]');
   };
 
   const handleClick = () => {

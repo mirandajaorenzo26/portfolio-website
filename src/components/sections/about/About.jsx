@@ -24,20 +24,19 @@ function About() {
   };
 
   return (
-    <div className='animate__animated animate__backInLeft px-5 text-center md:px-20 lg:px-32 xl:px-56'>
+    <div className='animate__animated animate__backInLeft px-5 text-center md:px-20 '>
       <div id='about' className='absolute top-[-120px]'></div>
-
-      <div className=''>
-        <h2 className='uppercase'>About me</h2>
+      <div>
+        <h2 className='text-sm font-light uppercase'>About me</h2>
         <strong className='text-2xl font-bold md:text-2xl'>
           A dedicated{' '}
           <span className='hover-underline-animation '>
-            Frond-End Developer
+            Front-end Developer
           </span>{' '}
           from the Philippines.
         </strong>
       </div>
-      <div className='my-5 flex flex-wrap justify-stretch gap-3 text-sm md:gap-5'>
+      <div className='tems-center my-5 flex flex-wrap justify-evenly  gap-3 text-sm '>
         <Button
           id={1}
           text='Introduction'

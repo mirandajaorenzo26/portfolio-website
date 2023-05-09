@@ -1,6 +1,6 @@
 export default function downloadFile() {
   const fileName = 'mirandajaorenzo-cv.pdf';
-  const fileUrl = '../../../public/mirandajaorenzo-cv.pdf';
+  const fileUrl = '/mirandajaorenzo-cv.pdf';
   if (
     window.confirm(`Are you sure you want to download the file ${fileName}?`)
   ) {

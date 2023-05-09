@@ -35,11 +35,11 @@ export default function Education() {
     <div
       className='flex flex-col gap-5
     '>
-      <div className='animate__animated animate__slideInLeft flex flex-col gap-5 rounded-3xl bg-light-navy-blue p-5 text-center text-white shadow-inner duration-150 hover:scale-150 hover:shadow-lg dark:bg-navy-blue dark:text-semi-white lg:flex-row lg:justify-center lg:text-left'>
+      <div className='animate__animated animate__slideInLeft flex flex-col gap-5 rounded-xl  bg-light-navy-blue p-5 text-center text-white shadow-inner duration-150 hover:scale-150 hover:shadow-md dark:bg-navy-blue dark:text-semi-white lg:flex-row lg:text-left'>
         <div className='flex flex-none justify-center p-5'>
           <img src={education.tertiary.logo} className='object-scale-down ' />
         </div>
-        <div className='flex flex-col justify-center lg:w-[50%]'>
+        <div className='flex flex-col justify-center'>
           <p className='text-xl font-bold'>
             {education.tertiary.educAttainment}
           </p>
@@ -60,11 +60,11 @@ export default function Education() {
           </ul>
         </div>
       </div>
-      <div className='animate__animated animate__slideInRight flex flex-col gap-5 rounded-3xl bg-light-navy-blue p-5 text-center text-white shadow-inner duration-150 hover:scale-150 hover:shadow-lg dark:bg-navy-blue dark:text-semi-white lg:flex-row lg:justify-center lg:text-left'>
+      <div className='animate__animated animate__slideInRight flex flex-col gap-5 rounded-xl bg-light-navy-blue p-5 text-center text-white shadow-inner duration-150 hover:scale-150 hover:shadow-md dark:bg-navy-blue dark:text-semi-white lg:flex-row  lg:text-left'>
         <div className='flex  flex-none justify-center p-5'>
           <img src={education.secondary.logo} className='object-scale-down' />
         </div>
-        <div className='flex flex-col justify-center lg:w-[50%]'>
+        <div className='flex flex-col justify-center'>
           <p className='text-xl font-bold'>
             {education.secondary.educAttainment}
           </p>

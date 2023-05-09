@@ -1,48 +1,73 @@
 /* eslint-disable react/prop-types */
 import { AiFillGithub } from 'react-icons/ai';
-import { FiExternalLink } from 'react-icons/fi';
+import { FiExternalLink, FiFigma } from 'react-icons/fi';
 
 import Button from '../../shared/Button';
 
-function ProjectItem({ project }) {
+function ProjectItem({ project, additionalClassName }) {
   return (
     <div
-      className={`relative flex h-[50vh] w-full  flex-col justify-end overflow-hidden rounded-3xl border border-navy-blue p-5 shadow-slate-50 duration-300 hover:scale-105 hover:shadow-lg lg:p-10`}>
+      className={`relative flex ${
+        project.type === 'featured' ? 'min-h-[60vh]' : ''
+      } flex-col justify-end overflow-hidden rounded-xl p-5 py-10 duration-300 lg:px-7 ${additionalClassName}`}>
       <img
         src={project.image}
-        className='absolute bottom-0 left-0 h-full  w-full object-cover'
+        className=' absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
       />
-      <div className='via-slate-700-600 absolute inset-0 bg-gradient-to-t from-navy-blue via-light-navy-blue'></div>
-      <p className='z-10 py-1 text-lg font-bold'>{project.title}</p>
-      <p className='z-10 text-xs text-gray-300 lg:line-clamp-3'>
+      <div className=' absolute inset-0 bg-gradient-to-t from-light-navy-blue dark:from-navy-blue'></div>
+      <p
+        className={`z-10 py-1 ${
+          project.type === 'featured' ? 'text-2xl' : 'text-sm'
+        } font-bold text-white`}>
+        {project.title}
+      </p>
+      <p
+        className={`z-10 ${
+          project.type === 'featured' ? 'text-sm md:text-base' : 'text-xs'
+        } text-gray-300 lg:line-clamp-3`}>
         {project.desc}
       </p>
       <div className='z-10 my-3 flex flex-wrap gap-x-5 gap-y-2'>
         {project.techs.map((tech) => {
           return (
-            <div key={tech} className='font-semibold'>
+            <div
+              key={tech}
+              className='rounded-md p-2 text-xs font-semibold text-white'>
               {tech}
             </div>
           );
         })}
       </div>
 
-      <div className='z-10 flex gap-2 '>
-        <Button
-          className={'view-code-btn'}
-          text={'View Code'}
-          icon={<AiFillGithub size={16} />}
-          link={project.repoLink}
-          target={"_blank"}
+      <div className='z-10 flex flex-wrap  gap-2'>
+        {(project.type === 'featured' || project.type === 'other-project') && (
+          <Button
+            className={'view-code-btn'}
+            text={'View Code'}
+            icon={<AiFillGithub size={16} />}
+            link={project.repoLink}
+            target={'_blank'}
+          />
+        )}
+        {project.type === 'web-design' && (
+          <Button
+            className={'view-code-btn'}
+            text={'View in Figma'}
+            icon={<FiFigma size={16} />}
+            link={project.link}
+            target={'_blank'}
+          />
+        )}
 
-        />
-        <Button
-          className={'live-site-btn'}
-          text={'Live Site'}
-          icon={<FiExternalLink size={16} />}
-          link={project.liveLink}
-          target={"_blank"}
-        />
+        {(project.type === 'featured' || project.type === 'other-project') && (
+          <Button
+            className={'live-site-btn'}
+            text={'Live Site'}
+            icon={<FiExternalLink size={16} />}
+            link={project.liveLink}
+            target={'_blank'}
+          />
+        )}
       </div>
     </div>
   );

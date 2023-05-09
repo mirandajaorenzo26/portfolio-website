@@ -145,7 +145,6 @@ function Skills() {
   };
 
   useEffect(() => {
-    // taga balik ng style
     if (activeFilter.includes(1))
       mostUsedFilter.current.classList.add('skill-filter-active');
     else {
@@ -194,8 +193,8 @@ function Skills() {
         </div>
       </div>
       {/* ------------- */}
-      <div className='grid lg:grid-cols-2'>
-        <div className='m-5 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue'>
+      <div className='grid gap-5 lg:grid-cols-2'>
+        <div className='rounded-xl bg-semi-white p-5 dark:bg-light-navy-blue lg:col-span-2'>
           <h3 className='mb-5 text-lg font-bold'>Front-End Technologies</h3>
 
           <div className='flex flex-wrap justify-center gap-5'>
@@ -219,7 +218,7 @@ function Skills() {
             )}
           </div>
         </div>
-        <div className='m-5 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue'>
+        <div className='rounded-xl bg-semi-white p-5 dark:bg-light-navy-blue'>
           <h3 className='mb-5 text-lg font-bold'>
             Back-End Technologies and Databases
           </h3>
@@ -246,7 +245,7 @@ function Skills() {
             )}
           </div>
         </div>
-        <div className='m-5 my-5 rounded-3xl bg-semi-white p-5 dark:bg-light-navy-blue lg:col-span-2'>
+        <div className='rounded-xl bg-semi-white p-5 dark:bg-light-navy-blue '>
           <h3 className='mb-5 text-lg font-bold'>
             Other Tools for Web Dev / Web Design
           </h3>

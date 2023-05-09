@@ -19,14 +19,14 @@ export default function AboutIntro() {
       <br />
       <p>
         I am also a self-taught UI/UX designer, I&apos;m driven by a passion for
-        creating visually stunning and user-friendly interfaces. I&apos;m always
-        excited to learn new technologies and take on new challenges to grow and
-        develop as a designer and developer.
+        creating visually stunning and user-friendly interfaces.
       </p>
       <br />
       <p>
-        I am committed to continuous learning and growth as a developer and am
-        eager to join a company that values innovation and creativity.
+        I&apos;m always excited to learn new technologies and take on new
+        challenges to grow and develop as a designer and developer. I am
+        committed to continuous learning and growth as a developer and am eager
+        to join a company that values innovation and creativity.
       </p>
       <br />
       <p className=' my-5 text-lg font-bold uppercase'>
@@ -38,7 +38,7 @@ export default function AboutIntro() {
       />
       <p className='my-5 text-xs text-gray-400'>with</p>
       <div className='flex flex-col flex-wrap justify-center gap-2 text-left md:flex-row'>
-        <Accomplishment number={4} title={'Completed Personal Project'} />
+        <Accomplishment number={5} title={'Completed Personal Project'} />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+/* eslint-disable react/prop-types */
 
 const DownloadButton = ({ text, buttonType, handleClick }) => {
   return (
@@ -8,12 +8,6 @@ const DownloadButton = ({ text, buttonType, handleClick }) => {
       {text}
     </button>
   );
-};
-
-DownloadButton.propTypes = {
-  text: PropTypes.string.isRequired,
-  buttonType: PropTypes.string.isRequired,
-  handleClick: PropTypes.func,
 };
 
 export default DownloadButton;

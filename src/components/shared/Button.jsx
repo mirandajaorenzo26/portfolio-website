@@ -6,7 +6,7 @@ const Button = ({ id, text, className, icon, link, target, handleClick }) => {
       <button
         id={id}
         className={`${className} ${
-          icon && 'flex items-center justify-center gap-2'
+          icon && `flex items-center justify-center gap-2`
         }`}
         onClick={handleClick}>
         {text}
