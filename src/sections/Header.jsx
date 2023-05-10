@@ -1,13 +1,13 @@
 import { useRef } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 
-import DownloadButton from './shared/DownloadButton';
-import Nav from './navigation/Nav';
-import MobileNav from './navigation/MobileNav';
-import ThemeToggle from './ThemeToggle';
+import DownloadButton from '../components/shared/DownloadButton';
+import Nav from '../components/navigation/Nav';
+import MobileNav from '../components/navigation/MobileNav';
+import ThemeToggle from '../components/shared/ThemeToggle';
 
-import downloadCV from '../functions/downloadFile';
-import Logo from './Logo';
+import downloadCV from '../utils/downloadFile';
+import Logo from '../components/shared/Logo';
 
 const Header = () => {
   const navRef = useRef();

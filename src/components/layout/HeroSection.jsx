@@ -11,5 +11,3 @@ export default function HeroSection({ left: Left, right: Right }) {
     </div>
   );
 }
-
-// my-5 flex min-h-[75vh] min-w-full flex-col items-center justify-center  rounded-3xl bg-white p-5 text-center dark:bg-light-navy-blue md:gap-0 xl:flex-row xl:gap-20 xl:text-left

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Button from '../../shared/Button';
+import Button from '../components/shared/Button';
 
-import AboutIntro from './AboutIntro';
-import Education from './Education';
-import Experience from './Experience';
+import AboutIntro from '../components/sections-components/about/AboutIntro';
+import Education from '../components/sections-components/about/Education';
+import Experience from '../components/sections-components/about/Experience';
 
 function About() {
   const tabs = document.querySelectorAll('.about-tab');
@@ -36,7 +36,7 @@ function About() {
           from the Philippines.
         </strong>
       </div>
-      <div className='tems-center my-5 flex flex-wrap justify-evenly  gap-3 text-sm '>
+      <div className='my-5 flex flex-wrap items-center justify-evenly  gap-3 text-sm '>
         <Button
           id={1}
           text='Introduction'

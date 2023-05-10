@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function Technology({ icon, name, status }) {
+function TechnologyItem({ icon, name, status }) {
   return (
     <div className='skill-technology animate__animated animate__fadeInDown hover:'>
       <div className='absolute right-0 top-0'>
@@ -28,4 +28,4 @@ function Technology({ icon, name, status }) {
   );
 }
 
-export default Technology;
+export default TechnologyItem;

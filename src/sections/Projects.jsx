@@ -1,11 +1,11 @@
-import ProjectList from './ProjectList';
+import ProjectList from '../components/sections-components/projects/ProjectList';
 
-import ageCalcScreenShot from '../../../assets/images/project-screenshots/age-calculator.png';
-import todoListScreenShot from '../../../assets/images/project-screenshots/todo-list.png';
-import calculatorScreenShot from '../../../assets/images/project-screenshots/basic-calculator.png';
-import weatherAppScreenshot from '../../../assets/images/project-screenshots/weather-app.png';
-import passwordGeneratorScreenshot from '../../../assets/images/project-screenshots/password-generator.png';
-import getVaccinatedAppScreenshot from '../../../assets/images/project-screenshots/getvaccinated-app.png';
+import ageCalcScreenShot from '../assets/images/project-screenshots/age-calculator.png';
+import todoListScreenShot from '../assets/images/project-screenshots/todo-list.png';
+import calculatorScreenShot from '../assets/images/project-screenshots/basic-calculator.png';
+import weatherAppScreenshot from '../assets/images/project-screenshots/weather-app.png';
+import passwordGeneratorScreenshot from '../assets/images/project-screenshots/password-generator.png';
+import getVaccinatedAppScreenshot from '../assets/images/project-screenshots/getvaccinated-app.png';
 function Projects() {
   const projects = [
     {

@@ -1,24 +1,25 @@
-import htmlLogo from '../../../assets/images/technologies/HTML.png';
-import cssLogo from '../../../assets/images/technologies/CSS.png';
-import jsLogo from '../../../assets/images/technologies/JS.png';
-import tsLogo from '../../../assets/images/technologies/TS.png';
-import reactLogo from '../../../assets/images/technologies/React.png';
-import tailwindLogo from '../../../assets/images/technologies/Tailwind.png';
-import bootstrapLogo from '../../../assets/images/technologies/Bootstrap.png';
-import sassLogo from '../../../assets/images/technologies/SASS.png';
-import angularLogo from '../../../assets/images/technologies/Angular.png';
-import nodejsLogo from '../../../assets/images/technologies/NodeJs.png';
-import firebaseLogo from '../../../assets/images/technologies/Firebase.png';
-import gitLogo from '../../../assets/images/technologies/Git.png';
-import githubLogo from '../../../assets/images/technologies/Github.png';
-import npmLogo from '../../../assets/images/technologies/npm.png';
-import viteLogo from '../../../assets/images/technologies/Vite.png';
-import webpackLogo from '../../../assets/images/technologies/Webpack.png';
-import figmaLogo from '../../../assets/images/technologies/Figma.png';
+import htmlLogo from '../assets/images/technologies/HTML.png';
+import cssLogo from '../assets/images/technologies/CSS.png';
+import jsLogo from '../assets/images/technologies/JS.png';
+import tsLogo from '../assets/images/technologies/TS.png';
+import reactLogo from '../assets/images/technologies/React.png';
+import tailwindLogo from '../assets/images/technologies/Tailwind.png';
+import bootstrapLogo from '../assets/images/technologies/Bootstrap.png';
+import sassLogo from '../assets/images/technologies/SASS.png';
+import angularLogo from '../assets/images/technologies/Angular.png';
+import nodejsLogo from '../assets/images/technologies/NodeJs.png';
+import firebaseLogo from '../assets/images/technologies/Firebase.png';
+import gitLogo from '../assets/images/technologies/Git.png';
+import githubLogo from '../assets/images/technologies/Github.png';
+import npmLogo from '../assets/images/technologies/npm.png';
+import viteLogo from '../assets/images/technologies/Vite.png';
+import webpackLogo from '../assets/images/technologies/Webpack.png';
+import figmaLogo from '../assets/images/technologies/Figma.png';
 
 import { useState, useRef, useEffect } from 'react';
 
-import Technology from './Technology';
+import TechnologyItem from '../components/sections-components/skills/TechnologyItem';
+
 function Skills() {
   const technologies = [
     {
@@ -125,7 +126,7 @@ function Skills() {
     },
   ];
 
-  const [activeFilter, setActiveFilter] = useState([1, 2, 3]);
+  const [activeFilter, setActiveFilter] = useState([1]);
   const mostUsedFilter = useRef();
   const alternativeFilter = useRef();
   const familiarFilter = useRef();
@@ -206,7 +207,7 @@ function Skills() {
                     tech.type === 'frontend'
                 )
                 .map((tech) => (
-                  <Technology
+                  <TechnologyItem
                     key={tech.name}
                     icon={tech.icon}
                     name={tech.name}
@@ -232,7 +233,7 @@ function Skills() {
                     tech.type === 'backend'
                 )
                 .map((tech) => (
-                  <Technology
+                  <TechnologyItem
                     className='animate__animated animate__bounce'
                     key={tech.name}
                     icon={tech.icon}
@@ -257,7 +258,7 @@ function Skills() {
                     activeFilter.includes(tech.status) && tech.type === 'tools'
                 )
                 .map((tech) => (
-                  <Technology
+                  <TechnologyItem
                     key={tech.name}
                     icon={tech.icon}
                     name={tech.name}

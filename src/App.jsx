@@ -1,11 +1,11 @@
 import 'animate.css';
-import Header from './components/Header';
-import Home from './components/sections/home/Home';
-import About from './components/sections/about/About';
-import Skills from './components/sections/skills/Skills';
-import Projects from './components/sections/projects/Projects';
-import GetInTouch from './components/sections/get-in-touch/GetInTouch';
-import Footer from './components/Footer';
+import Header from './sections/Header';
+import Home from './sections/Home';
+import About from './sections/About';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import GetInTouch from './sections/GetInTouch';
+import Footer from './sections/Footer';
 
 function App() {
   return (

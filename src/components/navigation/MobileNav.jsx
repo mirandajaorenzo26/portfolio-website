@@ -1,7 +1,7 @@
 import { AiOutlineClose } from 'react-icons/ai';
 import NavMenu from './NavMenu';
 import Button from '../shared/DownloadButton';
-import ThemeToggle from '../ThemeToggle';
+import ThemeToggle from '../shared/ThemeToggle';
 
 // eslint-disable-next-line react/prop-types
 const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {

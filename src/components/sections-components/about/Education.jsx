@@ -1,5 +1,5 @@
-import BulSULogo from './../../../assets/images/schools/bulsu.png';
-import YangaLogo from './../../../assets/images/schools/yanga.png';
+import BulSULogo from '../../../assets/images/schools/bulsu.png';
+import YangaLogo from '../../../assets/images/schools/yanga.png';
 export default function Education() {
   const education = {
     tertiary: {

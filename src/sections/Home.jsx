@@ -1,6 +1,6 @@
-import HeroSection from '../../layout/HeroSection';
-import Introduction from './Introduction';
-import MyImage from './MyImage';
+import HeroSection from '../components/layout/HeroSection';
+import Introduction from '../components/sections-components/home/Introduction';
+import MyImage from '../components/sections-components/home/MyImage';
 
 function Home() {
   return (
