@@ -126,7 +126,7 @@ function Skills() {
     },
   ];
 
-  const [activeFilter, setActiveFilter] = useState([1]);
+  const [activeFilter, setActiveFilter] = useState([1, 2, 3]);
   const mostUsedFilter = useRef();
   const alternativeFilter = useRef();
   const familiarFilter = useRef();
@@ -169,27 +169,27 @@ function Skills() {
 
       <h2 className='text-2xl font-bold uppercase'>Technologies that I use</h2>
       {/* Filter */}
-      <div className='flex flex-wrap items-center justify-center gap-5 p-5 text-xs'>
+      <div className=' my-5 flex flex-wrap items-center justify-center gap-5 text-xs lg:flex-row'>
         <p className='font-semibold text-gray-600'>Filters: </p>
         <div
           ref={mostUsedFilter}
           className='skill-filter  '
           onClick={(e) => toggleFilter(e, 1)}>
-          <div className='mr-1 inline-flex h-3 w-3 rounded-full bg-green-600'></div>{' '}
+          <div className='mr-1 flex h-3 w-3 rounded-full bg-green-600'></div>{' '}
           <p>Most Used</p>
         </div>
         <div
           ref={alternativeFilter}
           className='skill-filter  '
           onClick={(e) => toggleFilter(e, 2)}>
-          <div className='mr-1 inline-flex h-3 w-3 rounded-full bg-violet-600'></div>{' '}
+          <div className='mr-1 flex h-3 w-3 rounded-full bg-violet-600'></div>{' '}
           <p>Alternatives</p>
         </div>
         <div
           ref={familiarFilter}
           className='skill-filter  '
           onClick={(e) => toggleFilter(e, 3)}>
-          <div className='mr-1 inline-flex h-3 w-3 rounded-full bg-red-600'></div>{' '}
+          <div className='mr-1 flex h-3 w-3 rounded-full bg-red-600'></div>{' '}
           <p>With Basic Knowledge</p>
         </div>
       </div>

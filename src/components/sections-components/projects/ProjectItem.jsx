@@ -8,13 +8,13 @@ function ProjectItem({ project, additionalClassName }) {
   return (
     <div
       className={`relative flex ${
-        project.type === 'featured' ? 'min-h-[60vh]' : ''
+        project.type === 'featured' ? 'min-h-[50vh]' : ''
       } flex-col justify-end overflow-hidden rounded-xl p-5 py-10 duration-300 lg:px-7 ${additionalClassName}`}>
       <img
         src={project.image}
         className=' absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
       />
-      <div className=' absolute inset-0 bg-gradient-to-t from-light-navy-blue dark:from-navy-blue'></div>
+      <div className=' absolute inset-0 bg-gradient-to-t from-black dark:from-light-navy-blue'></div>
       <p
         className={`z-10 py-1 ${
           project.type === 'featured' ? 'text-2xl' : 'text-sm'
@@ -39,7 +39,7 @@ function ProjectItem({ project, additionalClassName }) {
         })}
       </div>
 
-      <div className='z-10 flex flex-wrap  gap-2'>
+      <div className='z-10 flex w-max flex-wrap  gap-2'>
         {(project.type === 'featured' || project.type === 'other-project') && (
           <Button
             className={'view-code-btn'}

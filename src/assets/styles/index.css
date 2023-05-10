@@ -27,23 +27,23 @@ a {
 }
 
 .header {
-  @apply fixed z-50 flex min-w-full bg-white px-5 py-5 shadow-md dark:bg-light-navy-blue lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52;
+  @apply fixed z-30 flex min-w-full bg-white px-5 py-5 shadow-md dark:bg-light-navy-blue lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52;
 }
 
 .footer {
-  @apply min-w-full bg-navy-blue px-5 py-5 text-white shadow-md dark:bg-light-navy-blue dark:text-white lg:min-h-fit lg:px-20 xl:px-52;
+  @apply min-w-full bg-navy-blue px-5 py-5 text-center text-white shadow-md dark:bg-light-navy-blue dark:text-white lg:min-h-fit lg:px-20 xl:px-52;
 }
 
 .section {
-  @apply bg-white px-2 text-navy-blue dark:bg-navy-blue dark:text-semi-white lg:px-20 xl:px-52;
+  @apply bg-white px-5 text-navy-blue dark:bg-navy-blue dark:text-semi-white lg:px-20 xl:px-52;
 }
 
 .section-v2 {
-  @apply bg-semi-white px-2 text-navy-blue dark:bg-light-navy-blue dark:text-semi-white lg:px-20 xl:px-52;
+  @apply bg-semi-white px-5 text-navy-blue dark:bg-light-navy-blue dark:text-semi-white lg:px-20 xl:px-52;
 }
 
 .section-inverted {
-  @apply bg-navy-blue px-2 text-white dark:bg-light-navy-blue lg:px-20 xl:px-52;
+  @apply bg-navy-blue px-5 text-white dark:bg-light-navy-blue lg:px-20 xl:px-52;
 }
 
 /* Buttons */
@@ -52,7 +52,7 @@ a {
 }
 
 .secondary-btn {
-  @apply whitespace-nowrap rounded-md border-2 border-navy-blue px-6  py-2 font-semibold text-navy-blue duration-300 hover:scale-105  hover:bg-gray-100 dark:border-white dark:text-white dark:hover:bg-navy-blue;
+  @apply whitespace-nowrap rounded-md border-2 border-navy-blue px-6 py-2 font-semibold text-navy-blue duration-300 hover:scale-105  hover:bg-gray-100 dark:border-white dark:text-white dark:hover:bg-navy-blue;
 }
 
 .tertiary-btn {
@@ -74,6 +74,7 @@ a {
 /* Sections' Components */
 
 /* About */
+
 .about-tab {
   @apply whitespace-nowrap rounded-full bg-navy-blue  px-5 py-2  font-semibold text-white duration-300 hover:scale-105 dark:bg-navy-blue;
 }
@@ -92,7 +93,7 @@ a {
 }
 
 .skill-filter {
-  @apply flex cursor-pointer items-center justify-center gap-2 rounded-full px-5 py-2 hover:scale-105;
+  @apply flex w-auto cursor-pointer items-center justify-center gap-2 rounded-full px-5 py-2 hover:scale-105;
 }
 
 .skill-filter-active {
@@ -110,5 +111,17 @@ a {
 }
 
 .hover-underline-animation:hover::after {
+  @apply origin-bottom-left scale-x-100;
+}
+
+.hover-underline-animation-inverted {
+  @apply relative  text-navy-blue dark:text-white;
+}
+
+.hover-underline-animation-inverted::after {
+  @apply absolute -bottom-1 left-0 h-0.5 w-full origin-bottom-right scale-x-0 bg-navy-blue transition-transform duration-[0.25s] ease-[ease-out] content-[''] dark:bg-white;
+}
+
+.hover-underline-animation-inverted:hover::after {
   @apply origin-bottom-left scale-x-100;
 }

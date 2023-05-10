@@ -13,6 +13,7 @@ export default function ProjectList({
           {featured}
         </Carousel>
       </div>
+
       <h3 className='my-5 font-bold text-gray-600 dark:text-gray-200'>
         Mini Projects
       </h3>

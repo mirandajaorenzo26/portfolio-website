@@ -27,6 +27,9 @@ const Header = () => {
         <Logo />
       </div>
       <Nav />
+
+      <ThemeToggle className={'mr-5 lg:hidden'} />
+
       <MobileNav
         navRef={navRef}
         toggleNavBar={toggleNavBar}
@@ -34,6 +37,7 @@ const Header = () => {
       />
       <div className='my-10 ml-5 hidden flex-1 flex-col justify-end gap-5 lg:my-0 lg:flex lg:flex-row lg:items-center lg:justify-end'>
         <ThemeToggle />
+
         <DownloadButton
           text='Download CV'
           buttonType='primary-btn'

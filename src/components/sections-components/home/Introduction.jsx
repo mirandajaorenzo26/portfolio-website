@@ -8,7 +8,7 @@ export default function Introduction() {
   return (
     <div className=' flex h-full items-center justify-center gap-5 text-center lg:text-left'>
       <ContactDesktop />
-      <div className='m-5 flex flex-col gap-1 text-2xl lg:gap-2 xl:gap-5'>
+      <div className='m-5 flex flex-col gap-1 text-2xl lg:gap-2'>
         <p className=''>
           Hello!{' '}
           <svg

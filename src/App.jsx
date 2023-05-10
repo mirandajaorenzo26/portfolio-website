@@ -6,12 +6,26 @@ import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import GetInTouch from './sections/GetInTouch';
 import Footer from './sections/Footer';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <>
       <Header />
       <main>
+        <ToastContainer
+          position='top-right'
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme='light'
+          className='lg:top-[90px]'
+        />
         <section className='section relative grid min-h-screen items-center'>
           <Home />
         </section>

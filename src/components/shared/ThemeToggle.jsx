@@ -1,7 +1,7 @@
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
 import { useState, useEffect } from 'react';
 
-export default function ThemeToggle() {
+export default function ThemeToggle({ className }) {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('color-theme');
   });
@@ -25,7 +25,7 @@ export default function ThemeToggle() {
       <button
         type='button'
         onClick={handleThemeSwitch}
-        className='hover:scale-105'>
+        className={`hover:scale-105 ${className}`}>
         {theme === 'dark' ? (
           <MdOutlineDarkMode size={32} />
         ) : (

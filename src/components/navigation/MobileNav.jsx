@@ -1,7 +1,6 @@
 import { AiOutlineClose } from 'react-icons/ai';
 import NavMenu from './NavMenu';
 import Button from '../shared/DownloadButton';
-import ThemeToggle from '../shared/ThemeToggle';
 
 // eslint-disable-next-line react/prop-types
 const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
@@ -21,7 +20,6 @@ const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
         <NavMenu text='Projects' location='#projects' />
         <NavMenu text='Get In Touch' location='#contacts' />
         <div className='my-5 flex flex-col items-center justify-center gap-5 lg:hidden'>
-          <ThemeToggle />
           <Button
             text='Download CV'
             buttonType='primary-btn'
