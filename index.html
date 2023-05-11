@@ -19,14 +19,9 @@
         localStorage.setItem('color-theme', 'light');
       }
     </script>
-    <script>
-      window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-      };
-    </script>
   </head>
   <body
-    class="bg-dark-neutral-white dark:text-dark-neutral-white font-inter text-neutral-black dark:bg-neutral-black">
+    class="bg-dark-neutral-white font-inter text-neutral-black dark:bg-neutral-black dark:text-dark-neutral-white">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

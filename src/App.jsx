@@ -2,7 +2,7 @@ import 'animate.css';
 import Header from './sections/Header';
 import Home from './sections/Home';
 import About from './sections/About';
-// import Skills from './sections/Skills';
+import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import GetInTouch from './sections/GetInTouch';
 import Footer from './sections/Footer';
@@ -33,7 +33,7 @@ function App() {
           <About />
         </section>
         <section className='section md:px-30 relative z-20 py-10'>
-          {/* <Skills /> */}
+          <Skills />
         </section>
         <section className='section-v2 md:px-30 relative z-20 py-10'>
           <Projects />
@@ -46,6 +46,5 @@ function App() {
     </>
   );
 }
-//
 
 export default App;
