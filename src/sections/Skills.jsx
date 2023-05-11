@@ -11,7 +11,7 @@ import nodejsLogo from '../assets/images/technologies/NodeJs.png';
 import firebaseLogo from '../assets/images/technologies/Firebase.png';
 import gitLogo from '../assets/images/technologies/Git.png';
 import githubLogo from '../assets/images/technologies/Github.png';
-// import npmLogo from '../assets/images/technologies/npm.png';
+import npmLogo from '../assets/images/technologies/npm.png';
 import viteLogo from '../assets/images/technologies/Vite.png';
 import webpackLogo from '../assets/images/technologies/Webpack.png';
 import figmaLogo from '../assets/images/technologies/Figma.png';
@@ -102,12 +102,12 @@ function Skills() {
       type: 'tools',
       status: 1,
     },
-    // {
-    //   icon: npmLogo,
-    //   name: 'npm',
-    //   type: 'tools',
-    //   status: 1,
-    // },
+    {
+      icon: npmLogo,
+      name: 'npm',
+      type: 'tools',
+      status: 1,
+    },
     {
       icon: viteLogo,
       name: 'Vite',
