@@ -29,9 +29,9 @@ function About() {
       <div>
         <h2 className='text-sm font-light uppercase'>About me</h2>
         <strong className='text-2xl font-bold md:text-2xl'>
-          A aspiring{' '}
+          I am an aspiring{' '}
           <span className='hover-underline-animation '>
-            Front-end Developer
+            front-end developer
           </span>{' '}
           from the Philippines.
         </strong>
