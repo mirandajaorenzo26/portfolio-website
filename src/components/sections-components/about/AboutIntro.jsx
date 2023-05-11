@@ -1,6 +1,6 @@
 export default function AboutIntro() {
   return (
-    <div className='animate__animated animate__fadeInLeft my-20 lg:mx-40'>
+    <div className='animate__animated animate__fadeInLeft my-10 lg:mx-40'>
       <p className='text-lg font-semibold'>
         Hi there! My name is Jao, and I&apos;m an aspiring front-end developer
         with a passion for building beautiful and functional web applications.
@@ -16,10 +16,10 @@ export default function AboutIntro() {
       </p>
       <br />
       <p>
-        I&apos;m always excited to learn new technologies and take on new
+        I&apos;m always excited to learn new technologies and take on more
         challenges to grow and develop as a developer. I am committed to
-        continuous learning and growth and am eager to join a company that
-        values innovation and creativity.
+        continuous learning and growth and eager to join a company that values
+        innovation and creativity.
       </p>
       <br />
       <p>
