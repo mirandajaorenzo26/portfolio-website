@@ -12,8 +12,8 @@ export default {
         inter: 'inter',
       },
       colors: {
-        'neutral-white': '#F3F3F3 ',
-        'dark-neutral-white': '#E1E1E1',
+        'neutral-white': '#F8F6FB ',
+        'dark-neutral-white': '#F1F0F3',
         'neutral-black': '#1B1B1B',
         "light-neutral-black": '#141414',
       },

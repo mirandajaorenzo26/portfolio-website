@@ -18,6 +18,7 @@ export default function TechStack() {
         <WebTechIcons icon={jsIcon} />
         <WebTechIcons icon={reactIcon} />
         <WebTechIcons icon={tailwindIcon} />
+        <WebTechIcons icon={sassIcon} />
       </div>
     </div>
   );
