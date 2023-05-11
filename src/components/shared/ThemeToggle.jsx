@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
 import { useState, useEffect } from 'react';
 
