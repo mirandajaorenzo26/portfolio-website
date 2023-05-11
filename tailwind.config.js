@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 // prettier-ignore
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [ "./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}",],
   darkMode: 'class',
   theme: {
     extend: {
@@ -28,5 +29,5 @@ export default {
     },
   },
   // eslint-disable-next-line no-undef
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: [require('prettier-plugin-tailwindcss')]
 };
