@@ -2,7 +2,7 @@ import Form from '../components/sections-components/get-in-touch/Form';
 import { AiFillGithub, AiFillLinkedin, AiTwotoneMail } from 'react-icons/ai';
 function GetInTouch() {
   return (
-    <div>
+    <div className='my-16'>
       <div id='contacts' className='absolute top-[-80px]'></div>
 
       <div className='grid lg:grid-cols-2'>

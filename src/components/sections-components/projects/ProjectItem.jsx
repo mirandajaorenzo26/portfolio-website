@@ -14,11 +14,11 @@ function ProjectItem({ project, additionalClassName }) {
         src={project.image}
         className=' absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
       />
-      <div className=' absolute inset-0 bg-gradient-to-t from-black dark:from-light-navy-blue'></div>
+      <div className=' absolute inset-0 bg-gradient-to-t from-black dark:from-light-neutral-black'></div>
       <p
         className={`z-10 py-1 ${
           project.type === 'featured' ? 'text-2xl' : 'text-sm'
-        } font-bold text-white`}>
+        } font-bold text-neutral-white`}>
         {project.title}
       </p>
       <p
@@ -32,7 +32,7 @@ function ProjectItem({ project, additionalClassName }) {
           return (
             <div
               key={tech}
-              className='rounded-md p-2 text-xs font-semibold text-white'>
+              className='rounded-md p-2 text-xs font-semibold text-neutral-white'>
               {tech}
             </div>
           );

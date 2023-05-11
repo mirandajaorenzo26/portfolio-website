@@ -38,7 +38,7 @@ function App() {
         <section className='section-v2 md:px-30 relative z-20 py-10'>
           <Projects />
         </section>
-        <section className='section md:px-30 relative z-20 py-10 '>
+        <section className='section md:px-30 relative z-20 min-h-max py-10 '>
           <GetInTouch />
         </section>
       </main>

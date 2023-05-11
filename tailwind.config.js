@@ -9,13 +9,10 @@ export default {
         inter: 'inter',
       },
       colors: {
-        'white': '#FCFBFF',
-        'semi-white': '#F8F6FB',
-        'navy-blue': '#15172A',
-        "light-navy-blue": '#1D1F31',
-        "most-used-tech": '',
-        "alternative-tech": '',
-        "familiar-tech": '',
+        'neutral-white': '#F3F3F3 ',
+        'dark-neutral-white': '#E1E1E1',
+        'neutral-black': '#1B1B1B',
+        "light-neutral-black": '#141414',
       },
       screens: {
         'sm': '640px',

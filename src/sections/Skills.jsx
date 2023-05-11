@@ -16,6 +16,8 @@ import viteLogo from '../assets/images/technologies/Vite.png';
 import webpackLogo from '../assets/images/technologies/Webpack.png';
 import figmaLogo from '../assets/images/technologies/Figma.png';
 
+import { RxCross2 } from 'react-icons/rx';
+
 import { useState, useRef, useEffect } from 'react';
 
 import TechnologyItem from '../components/sections-components/skills/TechnologyItem';
@@ -177,6 +179,7 @@ function Skills() {
           onClick={(e) => toggleFilter(e, 1)}>
           <div className='mr-1 flex h-3 w-3 rounded-full bg-green-600'></div>{' '}
           <p>Most Used</p>
+          {activeFilter.includes(1) && <RxCross2 size={16} />}
         </div>
         <div
           ref={alternativeFilter}
@@ -184,6 +187,7 @@ function Skills() {
           onClick={(e) => toggleFilter(e, 2)}>
           <div className='mr-1 flex h-3 w-3 rounded-full bg-violet-600'></div>{' '}
           <p>Alternatives</p>
+          {activeFilter.includes(2) && <RxCross2 size={16} />}
         </div>
         <div
           ref={familiarFilter}
@@ -191,15 +195,20 @@ function Skills() {
           onClick={(e) => toggleFilter(e, 3)}>
           <div className='mr-1 flex h-3 w-3 rounded-full bg-red-600'></div>{' '}
           <p>With Basic Knowledge</p>
+          {activeFilter.includes(3) && <RxCross2 size={16} />}
         </div>
       </div>
       {/* ------------- */}
       <div className='grid gap-5 lg:grid-cols-2'>
-        <div className='rounded-xl bg-semi-white p-5 dark:bg-light-navy-blue lg:col-span-2'>
+        <div className='rounded-xl bg-dark-neutral-white p-5 dark:bg-light-neutral-black lg:col-span-2'>
           <h3 className='mb-5 text-lg font-bold'>Front-End Technologies</h3>
 
           <div className='flex flex-wrap justify-center gap-5'>
-            {activeFilter.length !== 0 ? (
+            {technologies.filter(
+              (tech) =>
+                activeFilter.includes(tech.status) && tech.type === 'frontend'
+            ).length === 0 && <p>No front-end tech available</p>}
+            {activeFilter.length !== 0 &&
               technologies
                 .filter(
                   (tech) =>
@@ -213,19 +222,20 @@ function Skills() {
                     name={tech.name}
                     status={tech.status}
                   />
-                ))
-            ) : (
-              <p>No active filter.</p>
-            )}
+                ))}
           </div>
         </div>
-        <div className='rounded-xl bg-semi-white p-5 dark:bg-light-navy-blue'>
+        <div className='rounded-xl bg-dark-neutral-white p-5 dark:bg-light-neutral-black'>
           <h3 className='mb-5 text-lg font-bold'>
             Back-End Technologies and Databases
           </h3>
 
           <div className='flex flex-wrap justify-center gap-5'>
-            {activeFilter.length !== 0 ? (
+            {technologies.filter(
+              (tech) =>
+                activeFilter.includes(tech.status) && tech.type === 'backend'
+            ).length === 0 && <p>No back-end tech and databases available</p>}
+            {activeFilter.length !== 0 &&
               technologies
                 .filter(
                   (tech) =>
@@ -240,18 +250,19 @@ function Skills() {
                     name={tech.name}
                     status={tech.status}
                   />
-                ))
-            ) : (
-              <p>No active filter.</p>
-            )}
+                ))}
           </div>
         </div>
-        <div className='rounded-xl bg-semi-white p-5 dark:bg-light-navy-blue '>
+        <div className='rounded-xl bg-dark-neutral-white p-5 dark:bg-light-neutral-black '>
           <h3 className='mb-5 text-lg font-bold'>
             Other Tools for Web Dev / Web Design
           </h3>
           <div className='flex flex-wrap justify-center gap-5'>
-            {activeFilter.length !== 0 ? (
+            {technologies.filter(
+              (tech) =>
+                activeFilter.includes(tech.status) && tech.type === 'tools'
+            ).length === 0 && <p>No tools available</p>}
+            {activeFilter.length !== 0 &&
               technologies
                 .filter(
                   (tech) =>
@@ -264,10 +275,7 @@ function Skills() {
                     name={tech.name}
                     status={tech.status}
                   />
-                ))
-            ) : (
-              <p>No active filter.</p>
-            )}
+                ))}
           </div>
         </div>
       </div>

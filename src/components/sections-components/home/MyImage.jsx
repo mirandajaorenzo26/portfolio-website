@@ -8,7 +8,7 @@ export default function MyImage() {
         alt='Jao Renzo Miranda'
         className='relative z-10 w-[100%] rounded-3xl'
       />
-      <div className='absolute bottom-0 z-0 h-[60%] w-full rounded-3xl bg-semi-white shadow-inner dark:bg-navy-blue'></div>
+      <div className='absolute bottom-0 z-0 h-[60%] w-full rounded-3xl bg-dark-neutral-white shadow-inner dark:bg-neutral-black'></div>
     </div>
   );
 }

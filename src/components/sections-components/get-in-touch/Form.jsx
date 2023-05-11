@@ -88,22 +88,22 @@ export default function Form() {
           <div className='relative h-11 w-full min-w-[200px]'>
             <input
               ref={name}
-              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 dakr:focus:border-white peer h-full w-full border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-navy-blue focus:outline-0 disabled:border-0'
+              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 dakr:focus:border-neutral-white peer h-full w-full border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-neutral-black focus:outline-0 disabled:border-0'
               placeholder=' '
               name='user_name'
             />
-            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-normal leading-tight transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-navy-blue after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-navy-blue peer-focus:after:scale-x-100 peer-focus:after:border-navy-blue peer-disabled:text-transparent dark:after:border-white dark:peer-focus:text-white dark:peer-focus:after:border-white">
+            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-normal leading-tight transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-neutral-black after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-neutral-black peer-focus:after:scale-x-100 peer-focus:after:border-neutral-black peer-disabled:text-transparent dark:after:border-neutral-white dark:peer-focus:text-neutral-white dark:peer-focus:after:border-neutral-white">
               Your name
             </label>
           </div>
           <div className='relative h-11 w-full min-w-[200px]'>
             <input
               ref={email}
-              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 dakr:focus:border-white peer h-full w-full border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-navy-blue focus:outline-0 disabled:border-0'
+              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 dakr:focus:border-neutral-white peer h-full w-full border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-neutral-black focus:outline-0 disabled:border-0'
               placeholder=' '
               name='user_email'
             />
-            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-normal leading-tight transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-navy-blue after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-navy-blue peer-focus:after:scale-x-100 peer-focus:after:border-navy-blue peer-disabled:text-transparent dark:after:border-white dark:peer-focus:text-white dark:peer-focus:after:border-white">
+            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-normal leading-tight transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-neutral-black after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-neutral-black peer-focus:after:scale-x-100 peer-focus:after:border-neutral-black peer-disabled:text-transparent dark:after:border-neutral-white dark:peer-focus:text-neutral-white dark:peer-focus:after:border-neutral-white">
               Your email
             </label>
           </div>
@@ -112,21 +112,21 @@ export default function Form() {
           <div className='relative h-11 w-full min-w-[200px]'>
             <input
               ref={subject}
-              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 dakr:focus:border-white peer h-full w-full border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-navy-blue focus:outline-0 disabled:border-0'
+              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 dakr:focus:border-neutral-white peer h-full w-full border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-neutral-black focus:outline-0 disabled:border-0'
               placeholder=' '
               name='subject'
             />
-            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-bold leading-tight transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-navy-blue after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-navy-blue peer-focus:after:scale-x-100 peer-focus:after:border-navy-blue peer-disabled:text-transparent dark:after:border-white dark:peer-focus:text-white dark:peer-focus:after:border-white">
+            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-bold leading-tight transition-all after:absolute after:-bottom-1.5 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-neutral-black after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-neutral-black peer-focus:after:scale-x-100 peer-focus:after:border-neutral-black peer-disabled:text-transparent dark:after:border-neutral-white dark:peer-focus:text-neutral-white dark:peer-focus:after:border-neutral-white">
               Subject
             </label>
           </div>
           <div className='relative w-full min-w-[200px]'>
             <textarea
               ref={message}
-              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 peer h-full min-h-[100px] w-full resize-none border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-navy-blue focus:outline-0 disabled:resize-none disabled:border-0 dark:focus:border-navy-blue'
+              className='border-blue-gray-200 text-blue-gray-700 placeholder-shown:border-blue-gray-200 disabled:bg-blue-gray-50 peer h-full min-h-[100px] w-full resize-none border-b bg-transparent pb-1.5 pt-4 font-sans text-sm font-normal outline outline-0 transition-all focus:border-neutral-black focus:outline-0 disabled:resize-none disabled:border-0 dark:focus:border-neutral-black'
               placeholder=' '
               name='message'></textarea>
-            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-bold leading-tight transition-all after:absolute after:-bottom-0 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-navy-blue after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-navy-blue peer-focus:after:scale-x-100 peer-focus:after:border-navy-blue peer-disabled:text-transparent dark:after:border-white dark:peer-focus:text-white dark:peer-focus:after:border-white">
+            <label className="after:content[' '] text-blue-gray-500 peer-placeholder-shown:text-blue-gray-500 peer-disabled:peer-placeholder-shown:text-blue-gray-500 pointer-events-none absolute -top-1.5 left-0 flex h-full w-full select-none text-[11px] font-bold leading-tight transition-all after:absolute after:-bottom-0 after:block after:w-full after:scale-x-0 after:border-b-2 after:border-neutral-black after:transition-transform after:duration-300 peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.25] peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-neutral-black peer-focus:after:scale-x-100 peer-focus:after:border-neutral-black peer-disabled:text-transparent dark:after:border-neutral-white dark:peer-focus:text-neutral-white dark:peer-focus:after:border-neutral-white">
               Message
             </label>
             <small className='hidden text-red-700'>Error message</small>

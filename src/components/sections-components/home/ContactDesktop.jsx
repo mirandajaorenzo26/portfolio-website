@@ -10,7 +10,7 @@ export default function ContactDesktop() {
         rel='noreferrer'>
         <AiFillLinkedin
           size={42}
-          className='deley-300 duration-300 ease-in-out hover:scale-125 hover:fill-light-navy-blue dark:hover:fill-white'
+          className='deley-300 duration-300 ease-in-out hover:scale-125 hover:fill-light-neutral-black dark:hover:fill-neutral-white'
         />
       </a>
       <a
@@ -19,7 +19,7 @@ export default function ContactDesktop() {
         rel='noreferrer'>
         <AiFillGithub
           size={42}
-          className='deley-300 duration-300 ease-in-out hover:scale-125 hover:fill-light-navy-blue dark:hover:fill-white'
+          className='deley-300 duration-300 ease-in-out hover:scale-125 hover:fill-light-neutral-black dark:hover:fill-neutral-white'
         />
       </a>
     </div>

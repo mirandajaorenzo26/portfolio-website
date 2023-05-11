@@ -11,7 +11,7 @@ export default function ContactMobile() {
         rel='noreferrer'>
         <AiFillLinkedin
           size={32}
-          className='icon hover:fill-light-navy-blue dark:hover:fill-white'
+          className='icon hover:fill-light-neutral-black dark:hover:fill-neutral-white'
         />
       </a>
       <a
@@ -20,7 +20,7 @@ export default function ContactMobile() {
         rel='noreferrer'>
         <AiFillGithub
           size={32}
-          className='icon hover:fill-light-navy-blue dark:hover:fill-white'
+          className='icon hover:fill-light-neutral-black dark:hover:fill-neutral-white'
         />
       </a>
     </div>
