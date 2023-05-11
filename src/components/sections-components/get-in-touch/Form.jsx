@@ -10,41 +10,41 @@ export default function Form() {
   const subject = useRef();
   const message = useRef();
 
-  const notifySuccess = () =>
-    toast.success('Message sent successfully!', {
-      position: 'top-right',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'light',
-    });
+  // const notifySuccess = () =>
+  //   toast.success('Message sent successfully!', {
+  //     position: 'top-right',
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: 'light',
+  //   });
 
-  const notifyError = () =>
-    toast.error('Something went wrong!', {
-      position: 'top-right',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'light',
-    });
+  // const notifyError = () =>
+  //   toast.error('Something went wrong!', {
+  //     position: 'top-right',
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: 'light',
+  //   });
 
-  const notifyInputRequired = () =>
-    toast.error('All fields are required!', {
-      position: 'top-right',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'light',
-    });
+  // const notifyInputRequired = () =>
+  //   toast.error('All fields are required!', {
+  //     position: 'top-right',
+  //     autoClose: 5000,
+  //     hideProgressBar: false,
+  //     closeOnClick: true,
+  //     pauseOnHover: true,
+  //     draggable: true,
+  //     progress: undefined,
+  //     theme: 'light',
+  //   });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -64,7 +64,7 @@ export default function Form() {
         .then(
           (result) => {
             console.log(result.text);
-            notifySuccess();
+            // notifySuccess();
             setTimeout(() => {
               name.current.value = '';
               email.current.value = '';
@@ -74,11 +74,11 @@ export default function Form() {
           },
           (error) => {
             console.log(error.text);
-            notifyError();
+            // notifyError();
           }
         );
     } else {
-      notifyInputRequired();
+      // notifyInputRequired();
     }
   };
   return (
