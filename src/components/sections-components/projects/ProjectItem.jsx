@@ -9,12 +9,12 @@ function ProjectItem({ project, additionalClassName }) {
     <div
       className={`relative flex ${
         project.type === 'featured' ? 'min-h-[50vh]' : ''
-      } flex-col justify-end overflow-hidden rounded-xl p-5 py-10 duration-300 lg:px-7 ${additionalClassName}`}>
+      } flex-col justify-end p-5 py-10 duration-300 lg:px-7 ${additionalClassName}`}>
       <img
         src={project.image}
-        className=' absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
+        className='absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
       />
-      <div className=' absolute inset-0 bg-gradient-to-t from-black dark:from-light-neutral-black'></div>
+      <div className=' absolute inset-0 bg-gradient-to-t from-black dark:from-neutral-black'></div>
       <p
         className={`z-10 py-1 ${
           project.type === 'featured' ? 'text-2xl' : 'text-sm'
@@ -32,7 +32,7 @@ function ProjectItem({ project, additionalClassName }) {
           return (
             <div
               key={tech}
-              className='rounded-md p-2 text-xs font-semibold text-neutral-white'>
+              className=' p-2 text-xs font-semibold text-neutral-white'>
               {tech}
             </div>
           );

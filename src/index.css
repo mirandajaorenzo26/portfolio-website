@@ -7,15 +7,11 @@
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+  @apply box-border
+
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 a {
   color: inherit;
@@ -27,48 +23,48 @@ a {
 }
 
 .header {
-  @apply fixed z-30 flex min-w-full bg-neutral-white px-5 py-5 shadow-md dark:bg-light-neutral-black lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52;
+  @apply fixed z-30 flex min-w-full bg-neutral-white px-5 py-5 shadow dark:bg-neutral-black lg:flex lg:min-h-fit lg:flex-row lg:items-center lg:justify-between lg:px-20 xl:px-52 3xl:px-80 ;
 }
 
 .footer {
-  @apply min-w-full bg-neutral-black px-5 py-5 text-center text-neutral-white shadow-md dark:bg-light-neutral-black dark:text-neutral-white lg:min-h-fit lg:px-20 xl:px-52;
+  @apply min-w-full bg-light-neutral-black px-5 py-5 text-center text-neutral-white shadow dark:bg-neutral-black dark:text-neutral-white lg:min-h-fit lg:px-20 xl:px-52 3xl:px-80;
 }
 
 .section {
-  @apply bg-neutral-white px-5 text-neutral-black dark:bg-neutral-black dark:text-dark-neutral-white lg:px-20 xl:px-52;
+  @apply bg-neutral-white px-5 text-light-neutral-black dark:bg-light-neutral-black dark:text-dark-neutral-white lg:px-20 xl:px-52 3xl:px-80;
 }
 
 .section-v2 {
-  @apply bg-dark-neutral-white px-5 text-neutral-black dark:bg-light-neutral-black dark:text-dark-neutral-white lg:px-20 xl:px-52;
+  @apply bg-dark-neutral-white px-5 text-light-neutral-black dark:bg-neutral-black dark:text-dark-neutral-white lg:px-20 xl:px-52 3xl:px-80;
 }
 
 .section-inverted {
-  @apply bg-neutral-black px-5 text-neutral-white dark:bg-light-neutral-black lg:px-20 xl:px-52;
+  @apply bg-light-neutral-black px-5 text-neutral-white dark:bg-neutral-black lg:px-20 xl:px-52 3xl:px-80;
 }
 
 /* Buttons */
 .primary-btn {
-  @apply whitespace-nowrap rounded-md bg-neutral-black px-6 py-2 font-semibold text-neutral-white duration-300 hover:scale-105 hover:bg-light-neutral-black dark:bg-neutral-white dark:text-neutral-black dark:hover:bg-gray-100;
+  @apply w-full whitespace-nowrap border-2 border-light-neutral-black bg-light-neutral-black px-6 py-2 font-semibold text-neutral-white duration-300 hover:scale-105 hover:bg-neutral-black dark:bg-neutral-white dark:border-neutral-white dark:text-light-neutral-black dark:hover:bg-gray-100;
 }
 
 .secondary-btn {
-  @apply whitespace-nowrap rounded-md border-2 border-neutral-black px-6 py-2 font-semibold text-neutral-black duration-300 hover:scale-105  hover:bg-gray-100 dark:border-neutral-white dark:text-neutral-white dark:hover:bg-neutral-black;
+  @apply w-full whitespace-nowrap border-2 border-light-neutral-black px-6 py-2 font-semibold text-light-neutral-black duration-300 hover:scale-105  hover:bg-gray-100 dark:border-neutral-white dark:text-neutral-white dark:hover:bg-light-neutral-black;
 }
 
 .tertiary-btn {
-  @apply whitespace-nowrap rounded-md border-neutral-black px-6 py-2 font-semibold text-neutral-black  duration-300 hover:scale-105 hover:bg-gray-100 dark:text-neutral-white dark:hover:bg-neutral-black;
+  @apply w-full whitespace-nowrap underline underline-offset-8 border-light-neutral-black px-4 py-2 font-semibold text-light-neutral-black  duration-300 hover:scale-105 hover:bg-gray-100 dark:text-neutral-white dark:hover:bg-light-neutral-black;
 }
 
 .view-code-btn {
-  @apply whitespace-nowrap rounded-md bg-neutral-white px-5 py-2 text-xs font-semibold text-neutral-black duration-300 hover:scale-105 hover:bg-gray-100  dark:bg-neutral-white;
+  @apply whitespace-nowrap bg-neutral-white px-5 py-2 text-xs font-semibold text-light-neutral-black duration-300 hover:scale-105 hover:bg-gray-100  dark:bg-neutral-white;
 }
 .live-site-btn {
-  @apply whitespace-nowrap rounded-md border bg-transparent px-5 py-2 text-xs font-semibold text-neutral-white  duration-300 hover:scale-105;
+  @apply whitespace-nowrap border bg-transparent px-5 py-2 text-xs font-semibold text-neutral-white  duration-300 hover:scale-105;
 }
 
 /* Nav */
 .nav-menu {
-  @apply whitespace-nowrap px-5 py-2 font-semibold uppercase duration-300 hover:rounded-full hover:bg-dark-neutral-white hover:font-semibold  dark:hover:bg-neutral-black md:hover:scale-105;
+  @apply whitespace-nowrap px-5 py-2 font-semibold uppercase duration-300 hover:bg-dark-neutral-white hover:font-semibold  dark:hover:bg-light-neutral-black md:hover:scale-105;
 }
 
 /* Sections' Components */
@@ -76,28 +72,28 @@ a {
 /* About */
 
 .about-tab {
-  @apply whitespace-nowrap rounded-full bg-neutral-black  px-5 py-2  font-semibold text-neutral-white duration-300 hover:scale-105 dark:bg-neutral-black;
+  @apply whitespace-nowrap text-xs  bg-light-neutral-black border-2  px-5 py-2  font-semibold text-neutral-white duration-300 hover:scale-105 dark:bg-light-neutral-black;
 }
 
 .about-tab-active {
-  @apply bg-dark-neutral-white font-semibold text-neutral-black duration-300 hover:scale-110 dark:bg-dark-neutral-white dark:text-neutral-black;
+  @apply bg-dark-neutral-white font-semibold text-light-neutral-black duration-300 hover:scale-110 dark:bg-dark-neutral-white dark:text-light-neutral-black;
 }
 
 .accomplishment {
-  @apply flex items-center justify-center gap-2 rounded-full bg-dark-neutral-white px-5 py-2 text-neutral-black dark:bg-neutral-black dark:text-dark-neutral-white md:min-w-max;
+  @apply flex items-center justify-center gap-2  bg-dark-neutral-white px-5 py-2 text-light-neutral-black dark:bg-light-neutral-black dark:text-dark-neutral-white md:min-w-max;
 }
 
 /* Skills */
 .skill-technology {
-  @apply flex items-center justify-center gap-2 rounded-full bg-neutral-white px-5 py-2 font-semibold duration-300 hover:font-bold hover:shadow-md dark:bg-neutral-black;
+  @apply flex items-center justify-center gap-2  hover:bg-neutral-white px-5 py-2 font-semibold duration-300  hover:scale-105 hover:font-bold hover:shadow dark:hover:bg-light-neutral-black;
 }
 
 .skill-filter {
-  @apply flex w-auto cursor-pointer items-center justify-center gap-2 rounded-full px-5 py-2 hover:scale-105;
+  @apply flex w-auto cursor-pointer items-center justify-center gap-2  px-5 py-2 duration-300 hover:scale-105 rounded-full;
 }
 
 .skill-filter-active {
-  @apply bg-neutral-black font-bold text-neutral-white dark:bg-neutral-white dark:text-neutral-black;
+  @apply bg-light-neutral-black font-bold text-neutral-white dark:bg-neutral-white dark:text-light-neutral-black;
 }
 
 /* Custom Animation */
@@ -115,11 +111,11 @@ a {
 }
 
 .hover-underline-animation-inverted {
-  @apply relative  text-neutral-black dark:text-neutral-white;
+  @apply relative  text-light-neutral-black dark:text-neutral-white;
 }
 
 .hover-underline-animation-inverted::after {
-  @apply absolute -bottom-1 left-0 h-0.5 w-full origin-bottom-right scale-x-0 bg-neutral-black transition-transform duration-[0.25s] ease-[ease-out] content-[''] dark:bg-neutral-white;
+  @apply absolute -bottom-1 left-0 h-0.5 w-full origin-bottom-right scale-x-0 bg-light-neutral-black transition-transform duration-[0.25s] ease-[ease-out] content-[''] dark:bg-neutral-white;
 }
 
 .hover-underline-animation-inverted:hover::after {

@@ -171,7 +171,7 @@ function Skills() {
 
       <h2 className='text-2xl font-bold uppercase'>Technologies that I use</h2>
       {/* Filter */}
-      <div className=' my-5 flex flex-wrap items-center justify-center gap-5 text-xs lg:flex-row'>
+      <div className=' my-5 flex flex-col lg:flex-row items-center justify-center gap-5 text-xs lg:flex-row'>
         <p className='font-semibold text-gray-600'>Filters: </p>
         <div
           ref={mostUsedFilter}
@@ -200,7 +200,7 @@ function Skills() {
       </div>
       {/* ------------- */}
       <div className='grid gap-5 lg:grid-cols-2'>
-        <div className='rounded-xl bg-dark-neutral-white p-5 dark:bg-light-neutral-black lg:col-span-2'>
+        <div className='bg-dark-neutral-white p-5 dark:bg-neutral-black lg:col-span-2'>
           <h3 className='mb-5 text-lg font-bold'>Front-End Technologies</h3>
 
           <div className='flex flex-wrap justify-center gap-5'>
@@ -225,7 +225,7 @@ function Skills() {
                 ))}
           </div>
         </div>
-        <div className='rounded-xl bg-dark-neutral-white p-5 dark:bg-light-neutral-black'>
+        <div className='bg-dark-neutral-white p-5 dark:bg-neutral-black'>
           <h3 className='mb-5 text-lg font-bold'>
             Back-End Technologies and Databases
           </h3>
@@ -253,7 +253,7 @@ function Skills() {
                 ))}
           </div>
         </div>
-        <div className='rounded-xl bg-dark-neutral-white p-5 dark:bg-light-neutral-black '>
+        <div className='bg-dark-neutral-white p-5 dark:bg-neutral-black '>
           <h3 className='mb-5 text-lg font-bold'>
             Other Tools for Web Dev / Web Design
           </h3>

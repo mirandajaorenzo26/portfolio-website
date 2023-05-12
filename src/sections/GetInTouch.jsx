@@ -5,7 +5,7 @@ function GetInTouch() {
     <div className='my-16'>
       <div id='contacts' className='absolute top-[-80px]'></div>
 
-      <div className='grid lg:grid-cols-2'>
+      <div className='grid gap-5 lg:grid-cols-2'>
         <div className='space-y-5'>
           <h2 className='mb-10 text-5xl font-bold uppercase lg:mt-5'>
             Love to hear from you, <br />

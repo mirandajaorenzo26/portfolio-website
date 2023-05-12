@@ -8,7 +8,7 @@ export default function ProjectList({
 }) {
   return (
     <>
-      <div className='overflow-hidden rounded-xl'>
+      <div className='overflow-hidden'>
         <Carousel autoplay effect='fade'>
           {featured}
         </Carousel>

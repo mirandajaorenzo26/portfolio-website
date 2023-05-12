@@ -26,7 +26,7 @@ function About() {
   return (
     <div className='animate__animated animate__backInLeft text-center '>
       <div id='about' className='absolute top-[-120px]'></div>
-      <div>
+      <div className='5'>
         <h2 className='text-sm font-light uppercase'>About me</h2>
         <strong className='text-2xl font-bold md:text-2xl'>
           I am an aspiring{' '}
