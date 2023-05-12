@@ -7,7 +7,7 @@ const MobileNav = ({ navRef, toggleNavBar, handleClick }) => {
   return (
     <nav
       ref={navRef}
-      className='absolute right-0 top-0 z-50 min-h-screen min-w-[60vw] translate-x-[100%] border-none bg-neutral-white px-5 py-5 shadow-lg transition-all duration-500 dark:bg-neutral-black lg:hidden'>
+      className='absolute right-0 top-0 z-50 min-h-screen min-w-[100vw] translate-x-[100%] border-none bg-neutral-white px-5 py-5 shadow-lg transition-all duration-500 dark:bg-light-neutral-black lg:hidden'>
       <button
         onClick={toggleNavBar}
         className='flex min-w-full justify-end lg:hidden'>
