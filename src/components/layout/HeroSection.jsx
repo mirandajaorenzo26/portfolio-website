@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 export default function HeroSection({ left: Left, right: Right }) {
   return (
-    <div className='items-center justify-center gap-5 py-10 md:flex md:flex-col lg:flex-row xl:px-[5vw]'>
-      <div>
+    <div className='my-5 md:items-center md:justify-evenly md:grid md:grid-cols-2 lg:grid-cols-3 '>
+      <div className="lg:col-span-2 ">
         <Left />
       </div>
       <div>

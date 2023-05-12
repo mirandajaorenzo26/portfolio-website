@@ -65,11 +65,10 @@ function Projects() {
   return (
     <div className=''>
       <div id='projects' className='absolute top-[-80px]'></div>
-
       <h2 className='mb-5 text-center text-2xl font-bold uppercase'>
         My Projects
       </h2>
-      <div className='overflow-hidden rounded-xl '>
+      <div>
         <ProjectList projects={projects} />
       </div>
     </div>
