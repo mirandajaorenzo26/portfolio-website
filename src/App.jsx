@@ -26,19 +26,19 @@ function App() {
           theme='light'
           className='lg:top-[90px]'
         />
-        <section className='section relative grid min-h-screen items-center border-b-2'>
+        <section className='section relative grid min-h-screen items-center'>
           <Home />
         </section>
-        <section className='section-inverted md:px-30  relative z-20 py-10 border-b-2  '>
+        <section className='section-inverted md:px-30  relative z-20 py-10  '>
           <About />
         </section>
-        <section className='section md:px-30 relative z-20 py-10 border-b-2 '>
+        <section className='section md:px-30 relative z-20 py-10 '>
           <Skills />
         </section>
-        <section className='section-v2 md:px-30 relative z-20 py-10 border-b-2 '>
+        <section className='section-v2 md:px-30 relative z-20 py-10 '>
           <Projects />
         </section>
-        <section className='section md:px-30 relative z-20 min-h-max py-10  border-b-2'>
+        <section className='section md:px-30 relative z-20 min-h-max  py-10'>
           <GetInTouch />
         </section>
       </main>
