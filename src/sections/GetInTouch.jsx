@@ -1,5 +1,6 @@
 import Form from '../components/sections-components/get-in-touch/Form';
 import { AiFillGithub, AiFillLinkedin, AiTwotoneMail } from 'react-icons/ai';
+
 function GetInTouch() {
   return (
     <div className='my-16'>
@@ -11,14 +12,14 @@ function GetInTouch() {
             Love to hear from you, <br />
             Get In Touch!
           </h2>
-          <div className='flex flex-wrap justify-start gap-5 md:flex-col'>
+          <div className='flex flex-wrap justify-start gap-5 md:flex-col font-semibold'>
             <a
               href='https://linkedin.com/in/mirandajaorenzo'
               target='_blank'
               rel='noreferrer'
               className='hover-underline-animation-inverted flex w-max gap-2'>
               <AiFillLinkedin size={24} />
-              mirandajaorenzo
+              LinkedIn
             </a>
             <a
               href='https://github.com/mirandajaorenzo26'
@@ -26,9 +27,9 @@ function GetInTouch() {
               rel='noreferrer'
               className='hover-underline-animation-inverted flex w-max gap-2'>
               <AiFillGithub size={24} />
-              mirandajaorenzo26
+              GitHub
             </a>
-            <a className='hover-underline-animation-inverted flex w-max gap-2'>
+            <a className='hover-underline-animation-inverted flex w-max gap-2' href='mailto:mirandajaorenzo@gmail.com'>
               <AiTwotoneMail size={24} />
               mirandajaorenzo@gmail.com
             </a>

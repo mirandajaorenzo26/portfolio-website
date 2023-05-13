@@ -51,7 +51,7 @@ a {
 }
 
 .tertiary-btn {
-  @apply w-full whitespace-nowrap underline underline-offset-8 border-light-neutral-black px-4 py-2 font-semibold text-light-neutral-black  duration-300 hover:scale-105 hover:bg-gray-100 dark:text-neutral-white dark:hover:bg-light-neutral-black;
+  @apply w-full whitespace-nowrap border-b-2 dark:border-neutral-white border-light-neutral-black px-4 py-2 font-semibold text-light-neutral-black  duration-300 hover:scale-105 hover:bg-gray-100 dark:text-neutral-white dark:hover:bg-light-neutral-black;
 }
 
 .view-code-btn {
@@ -71,7 +71,7 @@ a {
 /* About */
 
 .about-tab {
-  @apply whitespace-nowrap text-xs  bg-light-neutral-black border-2  px-5 py-2  font-semibold text-neutral-white duration-300 hover:scale-105 dark:bg-light-neutral-black;
+  @apply whitespace-nowrap text-xs  bg-light-neutral-black border-2  px-5 py-2  font-semibold text-neutral-white duration-300 hover:scale-105 dark:bg-neutral-black;
 }
 
 .about-tab-active {

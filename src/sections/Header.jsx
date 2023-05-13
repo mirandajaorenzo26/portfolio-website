@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className='header animate__animated animate__slideInDown'>
+    <header className='header animate__animated animate__slideInDown border-b-2 border-neutral-black dark:border-neutral-white'>
       <div className='mr-5 flex-1 '>
         <Logo />
       </div>
