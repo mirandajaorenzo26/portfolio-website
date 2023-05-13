@@ -2,7 +2,7 @@ import mypicture from '../../../assets/images/mirandajaorenzo.png';
 
 export default function MyImage() {
   return (
-    <div className='relative hidden md:block'>
+    <div className='relative hidden  md:block'>
       <img
         src={mypicture}
         alt='Jao Renzo Miranda'
