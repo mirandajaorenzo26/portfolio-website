@@ -6,6 +6,7 @@ import calculatorScreenShot from '../assets/images/project-screenshots/basic-cal
 import weatherAppScreenshot from '../assets/images/project-screenshots/weather-app.png';
 import passwordGeneratorScreenshot from '../assets/images/project-screenshots/password-generator.png';
 import getVaccinatedAppScreenshot from '../assets/images/project-screenshots/getvaccinated-app.png';
+import filmSightAppScreenshot from '../assets/images/project-screenshots/film-sight.png';
 function Projects() {
   const projects = [
     {
@@ -57,15 +58,23 @@ function Projects() {
       type: 'web-design',
       image: getVaccinatedAppScreenshot,
       title: 'GetVacinnated App',
-      desc: 'This is a design for an appointment scheduling system for COVID-19 vaccinations.',
+      desc: 'This is the design for an appointment scheduling system for COVID-19 vaccinations dedicated for our project in System Analysis and Design',
       techs: ['Figma'],
       link: 'https://www.figma.com/file/deIP5O2NT0WJJaM5mf0FWk/GetVaccinated-App?type=design&node-id=0%3A1&t=Vplerl7i69s2XNz4-1',
+    },
+    {
+      type: 'web-design',
+      image: filmSightAppScreenshot,
+      title: 'Film Sight',
+      desc: 'This is the design for a movie search app for our project in Mobile App Development.',
+      techs: ['Figma'],
+      link: 'https://www.figma.com/file/2ZKmyfxdD99FhsUc0PxnCr/Film-Sight?type=design&node-id=0%3A1&t=boXHTuUPWaHH2V0P-1',
     },
   ];
   return (
     <div className=''>
       <div id='projects' className='absolute top-[-80px]'></div>
-      <h2 className='mb-5 text-center text-2xl font-bold uppercase'>
+      <h2 className='mb-10 text-center text-xl font-bold uppercase lg:text-4xl'>
         My Projects
       </h2>
       <div>

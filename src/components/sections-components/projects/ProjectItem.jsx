@@ -7,9 +7,11 @@ import Button from '../../shared/Button';
 function ProjectItem({ project, additionalClassName }) {
   return (
     <div
-      className={`relative flex ${
-        project.type === 'featured' ? 'min-h-[50vh]' : ''
-      } flex-col justify-end p-5 py-10 duration-300 lg:px-7 ${additionalClassName}`}>
+      className={`relative flex cursor-pointer  ${
+        project.type === 'featured'
+          ? 'min-h-[60vh]'
+          : 'duration-300 hover:scale-105'
+      } flex-col justify-end p-8 duration-300 lg:px-7 ${additionalClassName}`}>
       <img
         src={project.image}
         className='absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
@@ -38,8 +40,7 @@ function ProjectItem({ project, additionalClassName }) {
           );
         })}
       </div>
-
-      <div className='z-10 flex w-max flex-wrap  gap-2'>
+      <div className='z-10 flex w-full flex-wrap gap-2'>
         {(project.type === 'featured' || project.type === 'other-project') && (
           <Button
             className={'view-code-btn'}

@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 const NavMenu = ({ text, location }) => {
   return (
-    <li className='nav-menu'>
-      <a href={location}>{text}</a>
-    </li>
+    <a href={location}>
+      <li className='nav-menu'>{text}</li>
+    </a>
   );
 };
 

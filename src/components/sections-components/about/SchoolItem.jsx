@@ -4,7 +4,7 @@ export default function SchoolItem({ education }) {
   return (
     <div className='animate__animated animate__fadeInUp gap-5  bg-neutral-black p-5 text-center text-neutral-white  dark:bg-light-neutral-black dark:text-dark-neutral-white md:grid-cols-2'>
       <div className='m-5 grid items-center justify-center'>
-        <img src={education.logo} className='m-auto ' />
+        <img src={education.logo} className='m-auto' />
 
         <p>{education.schoolName}</p>
         <p className='text-gray-400'>{education.address}</p>

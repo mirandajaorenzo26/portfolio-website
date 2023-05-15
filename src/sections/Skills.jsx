@@ -169,9 +169,11 @@ function Skills() {
     <div className='text-center'>
       <div id='skills' className='absolute top-[-80px]'></div>
 
-      <h2 className='text-2xl font-bold uppercase'>Technologies that I use</h2>
+      <h2 className='text-xl font-bold uppercase lg:text-4xl'>
+        Technologies that I use
+      </h2>
       {/* Filter */}
-      <div className=' my-5 flex flex-col lg:flex-row items-center justify-center gap-5 text-xs lg:flex-row'>
+      <div className=' my-5 flex flex-col items-center justify-center gap-5 text-xs lg:flex-row'>
         <p className='font-semibold text-gray-600'>Filters: </p>
         <div
           ref={mostUsedFilter}

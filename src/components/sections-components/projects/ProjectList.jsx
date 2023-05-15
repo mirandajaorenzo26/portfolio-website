@@ -18,13 +18,7 @@ function ProjectList({ projects }) {
       webDesignProject={projects
         .filter((project) => project.type === 'web-design')
         .map((project) => {
-          return (
-            <ProjectItem
-              key={project.title}
-              project={project}
-              additionalClassName={'col-span-3'}
-            />
-          );
+          return <ProjectItem key={project.title} project={project} />;
         })}
     />
   );
