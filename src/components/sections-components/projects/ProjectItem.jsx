@@ -11,7 +11,7 @@ function ProjectItem({ project, additionalClassName }) {
         project.type === 'featured'
           ? 'min-h-[50vh]'
           : 'duration-300 hover:scale-105'
-      } flex-col justify-end p-5 py-10 duration-300 lg:px-7 ${additionalClassName}`}>
+      } flex-col justify-end py-8 duration-300 lg:px-7 ${additionalClassName}`}>
       <img
         src={project.image}
         className='absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
