@@ -1,12 +1,17 @@
 export default function AboutIntro() {
   return (
-    <div className='animate__animated animate__fadeInLeft my-10 lg:mx-40'>
-      <p className='text-lg font-semibold'>
-        Hi there! My name is Jao, and I&apos;m an aspiring front-end developer
-        with a passion for building beautiful and functional web applications.
-      </p>
-      <br />
-      <p className=''>
+    <div className='animate__animated animate__fadeInLeft'>
+      <div className='mb-10'>
+        <h2 className='mb-3 font-light uppercase'>About me</h2>
+        <strong className='text-4xl font-bold '>
+          Hi there! My name is Jao, and I&apos;m an aspiring{' '}
+          <span className='hover-underline-animation '>
+            front-end developer
+          </span>{' '}
+          with a passion for building beautiful and functional web applications.
+        </strong>
+      </div>
+      <p>
         This coming June, I&apos;m set to graduate with a degree in{' '}
         <strong>Bachelor of Science in Information Technology</strong>, and
         I&apos;m excited to begin my career in web development. While I may not

@@ -9,9 +9,9 @@ function ProjectItem({ project, additionalClassName }) {
     <div
       className={`relative flex cursor-pointer  ${
         project.type === 'featured'
-          ? 'min-h-[50vh]'
+          ? 'min-h-[60vh]'
           : 'duration-300 hover:scale-105'
-      } flex-col justify-end py-8 duration-300 lg:px-7 ${additionalClassName}`}>
+      } flex-col justify-end p-8 duration-300 lg:px-7 ${additionalClassName}`}>
       <img
         src={project.image}
         className='absolute bottom-0 left-0 h-full w-full object-cover brightness-50'
@@ -40,7 +40,6 @@ function ProjectItem({ project, additionalClassName }) {
           );
         })}
       </div>
-
       <div className='z-10 flex w-full flex-wrap gap-2'>
         {(project.type === 'featured' || project.type === 'other-project') && (
           <Button

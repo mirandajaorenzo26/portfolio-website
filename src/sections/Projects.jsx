@@ -74,7 +74,7 @@ function Projects() {
   return (
     <div className=''>
       <div id='projects' className='absolute top-[-80px]'></div>
-      <h2 className='mb-5 text-center text-2xl font-bold uppercase'>
+      <h2 className='mb-10 text-center text-xl font-bold uppercase lg:text-4xl'>
         My Projects
       </h2>
       <div>

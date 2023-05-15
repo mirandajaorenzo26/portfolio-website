@@ -35,7 +35,7 @@ export default function Schools() {
     },
   };
   return (
-    <div className='grid gap-5 lg:grid-cols-2'>
+    <div className='flex grid flex-col gap-5'>
       <SchoolItem education={education.tertiary} />
       <SchoolItem education={education.secondary} />
     </div>
