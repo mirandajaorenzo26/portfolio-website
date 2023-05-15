@@ -4,7 +4,7 @@ const Button = ({ id, text, className, icon, link, target, handleClick }) => {
   return (
     <>
       {link && (
-        <a href={link} target={target} rel='noreferrer' className="flex-1 lg:flex-grow-0"> 
+        <a href={link} target={target} rel='noreferrer' className=''>
           <button
             id={id}
             className={`${className} ${
