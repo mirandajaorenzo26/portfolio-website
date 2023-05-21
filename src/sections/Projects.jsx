@@ -16,7 +16,7 @@ function Projects() {
       title: "Dictionary App",
       desc: "This project is a dictionary app built with React, Vite, and Tailwind. It utilizes the free Dictionary API to provide word definitions and related information. Additionally, I explored the useContext hook for state management.",
       techs: ["React + Vite", "Tailwind"],
-      repoLink: "https://github.com/mirandajaorenzo26/dictionary/",
+      repoLink: "https://github.com/mirandajaorenzo26/dictionary-app/",
       liveLink: "https://mirandajaorenzo-dictionary.vercel.app/",
     },
     {
@@ -31,7 +31,7 @@ function Projects() {
     {
       type: "featured",
       image: ageCalcScreenShot,
-      title: "Age Calculator",
+      title: "Age Calculator App",
       desc: "The app allows users to enter their birthday and calculates their age in years, months, and days. This application is a challenge by Frontend Mentor and my first ever React Application.",
       techs: ["React + Vite"],
       repoLink: "https://github.com/mirandajaorenzo26/age-calculator",
