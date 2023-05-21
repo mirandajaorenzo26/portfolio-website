@@ -2,6 +2,7 @@ import ProjectList from '../components/sections-components/projects/ProjectList'
 
 import ageCalcScreenShot from '../assets/images/project-screenshots/age-calculator.png';
 import todoListScreenShot from '../assets/images/project-screenshots/todo-list.png';
+import dictionaryScreenShot from '../assets/images/project-screenshots/dictionary.png';
 import calculatorScreenShot from '../assets/images/project-screenshots/basic-calculator.png';
 import weatherAppScreenshot from '../assets/images/project-screenshots/weather-app.png';
 import passwordGeneratorScreenshot from '../assets/images/project-screenshots/password-generator.png';
@@ -17,6 +18,15 @@ function Projects() {
       techs: ['React + Vite'],
       repoLink: 'https://github.com/mirandajaorenzo26/age-calculator',
       liveLink: 'https://mirandajaorenzo26.github.io/age-calculator/',
+    },
+    {
+      type: 'featured',
+      image: dictionaryScreenShot,
+      title: 'Dictionary App',
+      desc: 'This project is a dictionary app built with React, Vite, and Tailwind. It utilizes the free Dictionary API to provide word definitions and related information. Additionally, I explore the useContext hook for state management.',
+      techs: ['React + Vite', 'Tailwind'],
+      repoLink: 'https://github.com/mirandajaorenzo26/dictionary/',
+      liveLink: 'https://mirandajaorenzo-dictionary.vercel.app/',
     },
     {
       type: 'featured',

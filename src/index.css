@@ -82,7 +82,7 @@ a {
 
 /* Skills */
 .skill-technology {
-  @apply flex items-center justify-center gap-2  px-5 py-2 font-semibold duration-300 hover:scale-105  hover:bg-neutral-white hover:font-bold hover:shadow dark:hover:bg-light-neutral-black;
+  @apply flex items-center justify-center gap-2 px-5 py-2 font-semibold hover:font-bold dark:hover:bg-light-neutral-black;
 }
 
 .skill-filter {
