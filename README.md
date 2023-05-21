@@ -17,23 +17,21 @@ My portfolio website was built using React + Vite and styled with Tailwind. The 
 
 ### Features
 
-- Add new task
-- Delete existing task
-- Mark task as completed
-- View all tasks
-- View active tasks
-- View completed tasks
+- Home
+- About
+- Skills
+- Projects
+- Get In Touch
+- Download CV
 
 ### Screenshots
 
-![Desktop Preview](/media/desktop-view.png?raw=true 'Desktop Preview')
-![Desktop Preview](/media/desktop-view-dark.png?raw=true 'Desktop Preview Dark')
-![Mobile Preview](/media/mobile-view.png?raw=true 'Mobile Preview')
-![Mobile Preview](/media/mobile-view-dark.png?raw=true 'Mobile Preview Dark')
+![Desktop Preview](/src/screenshots/desktop-view.png?raw=true "Desktop Preview")
+![Mobile Preview](/src/screenshots/mobile-view.png?raw=true "Mobile Preview")
 
 ### Links
 
-- Live Site URL: [https://mirandajaorenzo.vercel.app](https://mirandajaorenzo26.github.io/todo-list/)
+- Live Site URL: [https://mirandajaorenzo.vercel.app](https://mirandajaorenzo.vercel.app)
 
 ## My process
 
@@ -41,10 +39,11 @@ My portfolio website was built using React + Vite and styled with Tailwind. The 
 
 - [React](https://reactjs.org/) - JS library
 - [Tailwind](https://tailwindcss.com/) - CSS Framework
+- [EmailJs](https://www.emailjs.com/) - Email Service
 
 ### What I learned
 
-- I have gained a better understanding of the fundamentals of React, which has helped me to better grasp the concepts of React Hooks and Components. Moreover, through using this app, I have also been able to improve my skills with tailwind.
+By gaining a better understanding of the fundamentals of React, I was able to grasp the concepts of React Hooks and Components more effectively. This knowledge allowed me to integrate and utilize different components developed by other programmers, including Toastify, Carousel, Accordion, and React-icons. Additionally, using this app has improved my skills with tailwind, further enhancing my overall proficiency.
 
 ## Author
 
