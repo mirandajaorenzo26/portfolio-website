@@ -3,6 +3,7 @@ import ProjectList from "../components/sections-components/projects/ProjectList"
 import ageCalcScreenShot from "../assets/images/project-screenshots/age-calculator.png";
 import todoListScreenShot from "../assets/images/project-screenshots/todo-list.png";
 import dictionaryScreenShot from "../assets/images/project-screenshots/dictionary.png";
+import urlShortenerScreenShot from "../assets/images/project-screenshots/url-shortener.png";
 import calculatorScreenShot from "../assets/images/project-screenshots/basic-calculator.png";
 import weatherAppScreenshot from "../assets/images/project-screenshots/weather-app.png";
 import passwordGeneratorScreenshot from "../assets/images/project-screenshots/password-generator.png";
@@ -10,6 +11,15 @@ import getVaccinatedAppScreenshot from "../assets/images/project-screenshots/get
 import filmSightAppScreenshot from "../assets/images/project-screenshots/film-sight.png";
 function Projects() {
   const projects = [
+    {
+      type: "featured",
+      image: urlShortenerScreenShot,
+      title: "Url Shortener",
+      desc: "This is a basic URL shortener application that allows users to shorten long URLs into shorter, more manageable links. This is a challenge from Frontend Mentor.",
+      techs: ["React + Vite", "Tailwind"],
+      repoLink: "https://github.com/mirandajaorenzo26/url-shortener/",
+      liveLink: "https://mirandajaorenzo-url-shortener.vercel.app/",
+    },
     {
       type: "featured",
       image: dictionaryScreenShot,

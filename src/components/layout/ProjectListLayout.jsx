@@ -13,11 +13,7 @@ export default function ProjectList({
   return (
     <>
       <div>
-        <Carousel
-          autoplay
-          effect="fade"
-          className="duration-300 hover:scale-105"
-        >
+        <Carousel autoplay effect="fade">
           {featured}
         </Carousel>
       </div>
