@@ -9,8 +9,18 @@ import weatherAppScreenshot from "../assets/images/project-screenshots/weather-a
 import passwordGeneratorScreenshot from "../assets/images/project-screenshots/password-generator.png";
 import getVaccinatedAppScreenshot from "../assets/images/project-screenshots/getvaccinated-app.png";
 import filmSightAppScreenshot from "../assets/images/project-screenshots/film-sight.png";
+import randomizerScreenshot from "../assets/images/project-screenshots/randomizer.png";
 function Projects() {
   const projects = [
+    {
+      type: "featured",
+      image: randomizerScreenshot,
+      title: "Either You Choose or I Decide",
+      desc: "The Randomizer Application is a helpful tool designed to assist users when they are feeling indecisive about something. Whether you're unsure about which option to choose or simply want the application to make a decision for you, this application has got you covered.",
+      techs: ["React + Vite", "Tailwind"],
+      repoLink: "https://github.com/mirandajaorenzo26/randomizer/",
+      liveLink: "https://mirandajaorenzo-randomizer.vercel.app/",
+    },
     {
       type: "featured",
       image: urlShortenerScreenShot,
